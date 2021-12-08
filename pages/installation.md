@@ -1,0 +1,130 @@
+# Installation
+
+Code can be downloaded from: **LINK HERE**
+
+## Dependencies
+
+- A reasonably recent C++ compiler with OpenMP support.
+  - Tested with `clang 7.0.1-8` and `gcc 8.2.0`
+
+- GNU Make (optional) (highly recommended)
+  - Tested with version `4.2.1`
+
+- Nvidia Cuda Toolkit (optional)
+  - Tested with release `9.2`
+  - An Nvidia GPU is also necessary (does not need to be too recent).
+
+
+## Compilation
+
+
+- Simply running `make` or `make std` will compile a standard version of the program.
+  - The only parallism used in this form is OpenMP.
+  
+- Running `make cuda` will compile a CUDA assisted version.
+  - This should result in significant speedups.
+  - However it does require `Nvidia Cuda Toolkit` and an Nvidia GPU.
+  
+- Code can be compiled without make, using the commands in the makefile manually.
+
+
+## Command Line Arguments
+
+- `--help` : Displays all the arguments.
+- `--gc` : Generates a default config file.
+- `--cf <file>`: Specify the config file to be used.
+- `--dd <directory>`: Specify the directory with the input data files in it.
+
+## Configuration
+
+- Generally you should start by running the program with the `--gc` argument.
+This will create a `config.toml` file in the current directory.
+- The file itself contains comments explaining all the options.
+- An example of the file is included below. This might be out of date so do not
+directly use it.
+- Once generated and modified this file must be given with the `--cf` argument.
+- Also a directory containing the `courses.json`, `classrooms.json`, 
+`concurrency.json` files must be given with `--dd`. 
+(Refer to the data section for more info)
+
+```
+# Parameters regarding the genetic algorithm used
+[algorithm]
+
+# Number of iterations/generations the algorithm simulates
+num_iterations = 100
+
+# Total number of chromosomes/schedules used
+num_chromosomes = 100
+
+# Number of good chromosomes kept from each generation
+track_best = 20
+
+# Number of bad chromosomes replaced each generation
+replace_generation = 80
+
+# Probability of crossover (0-100) (should be 100 for most cases)
+crossover_prob = 100
+
+# Probability of mutation (0-100)
+mutation_prob = 40
+
+# Number of points to be taken from the other chromosome during crossover
+crossover_size = 300
+
+# Number of points to be randomized during mutations
+mutation_size = 300
+
+# If true mutation size varies between 0 and 2*mutation_size
+variable_mutations = true
+
+
+# Constants used during the fitness calculations
+[constants]
+
+# Penalty to be applied if two classes of one course are on the same day
+same_day_penalty = 1000
+
+# Penalty to be applied if an instructor has 2 courses at the same time
+instructor_collision_penalty = 1000
+
+# Penalty to be applied if course capacity > classroom capacity
+capacity_penalty = 900
+
+# Penalty to be applied if a classroom has 2 courses scheduled to it at the same time
+classroom_collision_penalty = 850
+
+# Max penalty to be applied for too many concurrent students
+# See documentation for an explanation of concurrency
+concurrency_collision_penalty_max = 700
+
+# Max penalty is applied when concurrency >= max_concurrency 
+# See documentation for an explanation of concurrency
+max_concurrency = 150
+
+# Penalty to be applied if two courses at the same time slot are in the same academic block
+academic_block_collision_penalty = 500
+
+# Max penalty for an instructor having too many classes in one day
+instructor_too_many_classes_penalty_max = 600
+
+# Min penalty for an instructor having too many classes in one day
+instructor_too_many_classes_penalty_min = 200
+
+# Penalty to be applied if a course has classes on consecutive days
+consecutive_days_penalty = 200
+
+# OpenMP or CUDA related parameters
+[parallel]
+
+# Percantage of chromosomes to be fitness calculated by cuda
+# The rest will be handled by openmp
+# Simply set to 100 to disable hybrid all together
+cuda_perc=50
+
+# Number of CPU threads OpenMP can use
+num_threads = 1
+
+# Device number for CUDA
+device_num = 0
+```

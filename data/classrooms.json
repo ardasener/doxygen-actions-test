@@ -1,0 +1,387 @@
+[
+    {
+      "id": 1,
+      "code": "FASS G048",
+      "capacity": 64,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 2,
+      "code": "FASS 1081",
+      "capacity": 40,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 3,
+      "code": "FASS G052",
+      "capacity": 64,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 4,
+      "code": "FASS G056",
+      "capacity": 46,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 5,
+      "code": "FASS 1096",
+      "capacity": 70,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 6,
+      "code": "FASS 1089",
+      "capacity": 70,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 7,
+      "code": "FASS 1098",
+      "capacity": 70,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 8,
+      "code": "FASS 1099",
+      "capacity": 65,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 9,
+      "code": "FASS G062",
+      "capacity": 210,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 10,
+      "code": "FASS 1101",
+      "capacity": 62,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 11,
+      "code": "FASS 1102",
+      "capacity": 64,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 12,
+      "code": "FASS 1103",
+      "capacity": 67,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 13,
+      "code": "FASS 1001",
+      "capacity": 49,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 14,
+      "code": "FASS 2023",
+      "capacity": 63,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 15,
+      "code": "FASS 2031",
+      "capacity": 44,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 16,
+      "code": "FASS 2119/2128",
+      "capacity": 108,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 17,
+      "code": "FASS 1001A",
+      "capacity": 17,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 18,
+      "code": "FASS G022",
+      "capacity": 84,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 19,
+      "code": "FASS 1008A",
+      "capacity": 17,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 20,
+      "code": "FASS G049",
+      "capacity": 66,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 21,
+      "code": "FENS G035",
+      "capacity": 76,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 22,
+      "code": "FENS G032",
+      "capacity": 84,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 23,
+      "code": "FENS G029",
+      "capacity": 60,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 24,
+      "code": "FENS G025",
+      "capacity": 36,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 25,
+      "code": "FENS G015",
+      "capacity": 45,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 26,
+      "code": "FENS 2019",
+      "capacity": 44,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 27,
+      "code": "FENS L065",
+      "capacity": 34,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 28,
+      "code": "FENS L067",
+      "capacity": 34,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 29,
+      "code": "FENS L063",
+      "capacity": 57,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 30,
+      "code": "FENS L062",
+      "capacity": 61,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 31,
+      "code": "FENS L061",
+      "capacity": 35,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 32,
+      "code": "FENS L058",
+      "capacity": 35,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 33,
+      "code": "FENS L056",
+      "capacity": 51,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 34,
+      "code": "FENS L055",
+      "capacity": 51,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 35,
+      "code": "FENS L048",
+      "capacity": 41,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 36,
+      "code": "FENS L047",
+      "capacity": 50,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 37,
+      "code": "FENS L045",
+      "capacity": 125,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 38,
+      "code": "FENS G055",
+      "capacity": 63,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 39,
+      "code": "FENS G059",
+      "capacity": 45,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 40,
+      "code": "FENS G077",
+      "capacity": 380,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 41,
+      "code": "FENS L027",
+      "capacity": 44,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 42,
+      "code": "FENS L029",
+      "capacity": 53,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 43,
+      "code": "FENS L030",
+      "capacity": 56,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 44,
+      "code": "FENS L035",
+      "capacity": 56,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 45,
+      "code": "FMAN G065",
+      "capacity": 22,
+      "hasDataport": false,
+      "isUshaped": true
+    },
+    {
+      "id": 46,
+      "code": "FMAN G062",
+      "capacity": 20,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 47,
+      "code": "FMAN 1099",
+      "capacity": 350,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 48,
+      "code": "FMAN G060",
+      "capacity": 50,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 49,
+      "code": "FMAN L014",
+      "capacity": 90,
+      "hasDataport": false,
+      "isUshaped": false
+    },
+    {
+      "id": 50,
+      "code": "FMAN G045",
+      "capacity": 26,
+      "hasDataport": false,
+      "isUshaped": true
+    },
+    {
+      "id": 51,
+      "code": "FMAN G041",
+      "capacity": 25,
+      "hasDataport": false,
+      "isUshaped": true
+    },
+    {
+      "id": 52,
+      "code": "FMAN L018",
+      "capacity": 64,
+      "hasDataport": true,
+      "isUshaped": false
+    },
+    {
+      "id": 53,
+      "code": "FMAN G042",
+      "capacity": 20,
+      "hasDataport": false,
+      "isUshaped": true
+    },
+    {
+      "id": 54,
+      "code": "FMAN G050",
+      "capacity": 24,
+      "hasDataport": true,
+      "isUshaped": true
+    },
+    {
+      "id": 55,
+      "code": "FMAN G056",
+      "capacity": 20,
+      "hasDataport": true,
+      "isUshaped": false
+    }
+  ]
