@@ -1,0 +1,326 @@
+\hypertarget{classcpptoml_1_1array}{}\doxysection{cpptoml\+::array Class Reference}
+\label{classcpptoml_1_1array}\index{cpptoml::array@{cpptoml::array}}
+
+
+{\ttfamily \#include $<$cpptoml.\+h$>$}
+
+
+
+Inheritance diagram for cpptoml\+::array\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classcpptoml_1_1array__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cpptoml\+::array\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=180pt]{classcpptoml_1_1array__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{classcpptoml_1_1array_a91f67a2e7e24602322364434cdc7c473}{size\+\_\+type}} = std\+::size\+\_\+t
+\item 
+using \mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} = std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ $>$\+::\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}}
+\item 
+using \mbox{\hyperlink{classcpptoml_1_1array_adc3c44638883223631c8e9090bdac05d}{const\+\_\+iterator}} = std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ $>$\+::\mbox{\hyperlink{classcpptoml_1_1array_adc3c44638883223631c8e9090bdac05d}{const\+\_\+iterator}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ \mbox{\hyperlink{classcpptoml_1_1array_aecbf0b65103aa06a9f8b4aa563152040}{clone}} () const override
+\item 
+virtual bool \mbox{\hyperlink{classcpptoml_1_1array_a4d42ae29bac6386a8bd83cac6863de79}{is\+\_\+array}} () const override
+\item 
+\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} \mbox{\hyperlink{classcpptoml_1_1array_a8565b6cdf5067c19c69ae11510f82e5a}{begin}} ()
+\item 
+\mbox{\hyperlink{classcpptoml_1_1array_adc3c44638883223631c8e9090bdac05d}{const\+\_\+iterator}} \mbox{\hyperlink{classcpptoml_1_1array_a1a539b46f7cdea650163532b02218d92}{begin}} () const
+\item 
+\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} \mbox{\hyperlink{classcpptoml_1_1array_a22b4e046221435bf10b1d40886c2928d}{end}} ()
+\item 
+\mbox{\hyperlink{classcpptoml_1_1array_adc3c44638883223631c8e9090bdac05d}{const\+\_\+iterator}} \mbox{\hyperlink{classcpptoml_1_1array_a8780618cf3968b9051d4826951480030}{end}} () const
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ $>$ \& \mbox{\hyperlink{classcpptoml_1_1array_afdc9c2172a9aa36b55f95da937067ea0}{get}} ()
+\item 
+const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ $>$ \& \mbox{\hyperlink{classcpptoml_1_1array_a0a4784554a14dbc56989dff2cd3f73e8}{get}} () const
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ \mbox{\hyperlink{classcpptoml_1_1array_a2fbfb95c5dbe4d1faa7cd8a44a3e6012}{at}} (size\+\_\+t idx) const
+\item 
+{\footnotesize template$<$class T $>$ }\\std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1value}{value}}$<$ T $>$ $>$ $>$ \mbox{\hyperlink{classcpptoml_1_1array_a714b179943aaa69c63510e5864a65b76}{array\+\_\+of}} () const
+\item 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{structcpptoml_1_1array__of__trait}{array\+\_\+of\+\_\+trait}}$<$ T $>$\+::return\+\_\+type \mbox{\hyperlink{classcpptoml_1_1array_a47e7629b178cfff08580f5d02e3cc508}{get\+\_\+array\+\_\+of}} () const
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1array}{array}} $>$ $>$ \mbox{\hyperlink{classcpptoml_1_1array_a300c0e5a3dc9ca6aa12dcd003a5a0593}{nested\+\_\+array}} () const
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{classcpptoml_1_1array_a7cb778f226d2695cfeb839113f1c0b5e}{push\+\_\+back}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1value}{value}}$<$ T $>$ $>$ \&val)
+\item 
+void \mbox{\hyperlink{classcpptoml_1_1array_ae0d8668e66090fc74679ca190aae9132}{push\+\_\+back}} (const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1array}{array}} $>$ \&val)
+\item 
+{\footnotesize template$<$class T $>$ }\\void \mbox{\hyperlink{classcpptoml_1_1array_ad8225c455bc24816332fa82d00b014c1}{push\+\_\+back}} (T \&\&val, typename \mbox{\hyperlink{structcpptoml_1_1value__traits}{value\+\_\+traits}}$<$ T $>$\+::type $\ast$=0)
+\item 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} \mbox{\hyperlink{classcpptoml_1_1array_a5bdbb27144823af65e4d5f2b387ae9df}{insert}} (\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} position, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1value}{value}}$<$ T $>$ $>$ \&\mbox{\hyperlink{classcpptoml_1_1value}{value}})
+\item 
+\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} \mbox{\hyperlink{classcpptoml_1_1array_a2baf1399c43c941321bdc86cbbed0dc1}{insert}} (\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} position, const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1array}{array}} $>$ \&\mbox{\hyperlink{classcpptoml_1_1value}{value}})
+\item 
+{\footnotesize template$<$class T $>$ }\\\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} \mbox{\hyperlink{classcpptoml_1_1array_ad095605f299379d6065882cd9789e8d0}{insert}} (\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} position, T \&\&val, typename \mbox{\hyperlink{structcpptoml_1_1value__traits}{value\+\_\+traits}}$<$ T $>$\+::type $\ast$=0)
+\item 
+\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} \mbox{\hyperlink{classcpptoml_1_1array_a6566c0a7ab80ee2725e54c58a23d6a91}{erase}} (\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} position)
+\item 
+void \mbox{\hyperlink{classcpptoml_1_1array_a9ab38af53133a1defc74305c54320e36}{clear}} ()
+\item 
+void \mbox{\hyperlink{classcpptoml_1_1array_a32a2f15d2483e14d0edb0d2d338454f0}{reserve}} (\mbox{\hyperlink{classcpptoml_1_1array_a91f67a2e7e24602322364434cdc7c473}{size\+\_\+type}} n)
+\item 
+template$<$$>$ \mbox{\hyperlink{structcpptoml_1_1array__of__trait}{array\+\_\+of\+\_\+trait}}$<$ \mbox{\hyperlink{classcpptoml_1_1array}{array}} $>$\+::return\+\_\+type \mbox{\hyperlink{classcpptoml_1_1array_a0dfa6f500a16ff52743da3299748e0c3}{get\+\_\+array\+\_\+of}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcpptoml_1_1array_ab7c7bc310a3eaa76303e9137689191a8}{array}} ()=default
+\item 
+{\footnotesize template$<$class Input\+Iterator $>$ }\\\mbox{\hyperlink{classcpptoml_1_1array_ae26498680c09532b191f11018ffe0c13}{array}} (Input\+Iterator \mbox{\hyperlink{classcpptoml_1_1array_a8565b6cdf5067c19c69ae11510f82e5a}{begin}}, Input\+Iterator \mbox{\hyperlink{classcpptoml_1_1array_a22b4e046221435bf10b1d40886c2928d}{end}})
+\item 
+\mbox{\hyperlink{classcpptoml_1_1array_a1c4e9aab1878d826e573155e80afa9f3}{array}} (const \mbox{\hyperlink{classcpptoml_1_1array}{array}} \&obj)=delete
+\item 
+\mbox{\hyperlink{classcpptoml_1_1array}{array}} \& \mbox{\hyperlink{classcpptoml_1_1array_a1d1742c6eeb553a6f082e9741c18ede2}{operator=}} (const \mbox{\hyperlink{classcpptoml_1_1array}{array}} \&obj)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ $>$ \mbox{\hyperlink{classcpptoml_1_1array_a03b5e8918772e4da3b99e15ee8125d16}{values\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1array}{array}} $>$ \mbox{\hyperlink{classcpptoml_1_1array_aaf6a4e7fd8f86d507279f7c319dfc5a3}{make\+\_\+array}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Member Typedef Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1array_adc3c44638883223631c8e9090bdac05d}\label{classcpptoml_1_1array_adc3c44638883223631c8e9090bdac05d}} 
+\index{cpptoml::array@{cpptoml::array}!const\_iterator@{const\_iterator}}
+\index{const\_iterator@{const\_iterator}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{const\_iterator}{const\_iterator}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classcpptoml_1_1array_adc3c44638883223631c8e9090bdac05d}{cpptoml\+::array\+::const\+\_\+iterator}} =  std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcpptoml_1_1base}{base}}$>$ $>$\+::\mbox{\hyperlink{classcpptoml_1_1array_adc3c44638883223631c8e9090bdac05d}{const\+\_\+iterator}}}
+
+arrays can be iterated over. Const version. \mbox{\Hypertarget{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}\label{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}} 
+\index{cpptoml::array@{cpptoml::array}!iterator@{iterator}}
+\index{iterator@{iterator}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{iterator}{iterator}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{cpptoml\+::array\+::iterator}} =  std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcpptoml_1_1base}{base}}$>$ $>$\+::\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}}}
+
+arrays can be iterated over \mbox{\Hypertarget{classcpptoml_1_1array_a91f67a2e7e24602322364434cdc7c473}\label{classcpptoml_1_1array_a91f67a2e7e24602322364434cdc7c473}} 
+\index{cpptoml::array@{cpptoml::array}!size\_type@{size\_type}}
+\index{size\_type@{size\_type}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{size\_type}{size\_type}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{classcpptoml_1_1array_a91f67a2e7e24602322364434cdc7c473}{cpptoml\+::array\+::size\+\_\+type}} =  std\+::size\+\_\+t}
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1array_ab7c7bc310a3eaa76303e9137689191a8}\label{classcpptoml_1_1array_ab7c7bc310a3eaa76303e9137689191a8}} 
+\index{cpptoml::array@{cpptoml::array}!array@{array}}
+\index{array@{array}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{array()}{array()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily cpptoml\+::array\+::array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [default]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1array_ae26498680c09532b191f11018ffe0c13}\label{classcpptoml_1_1array_ae26498680c09532b191f11018ffe0c13}} 
+\index{cpptoml::array@{cpptoml::array}!array@{array}}
+\index{array@{array}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{array()}{array()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class Input\+Iterator $>$ \\
+cpptoml\+::array\+::array (\begin{DoxyParamCaption}\item[{Input\+Iterator}]{begin,  }\item[{Input\+Iterator}]{end }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1array_a1c4e9aab1878d826e573155e80afa9f3}\label{classcpptoml_1_1array_a1c4e9aab1878d826e573155e80afa9f3}} 
+\index{cpptoml::array@{cpptoml::array}!array@{array}}
+\index{array@{array}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{array()}{array()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily cpptoml\+::array\+::array (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcpptoml_1_1array}{array}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1array_a714b179943aaa69c63510e5864a65b76}\label{classcpptoml_1_1array_a714b179943aaa69c63510e5864a65b76}} 
+\index{cpptoml::array@{cpptoml::array}!array\_of@{array\_of}}
+\index{array\_of@{array\_of}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{array\_of()}{array\_of()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1value}{value}}$<$ T $>$ $>$ $>$ cpptoml\+::array\+::array\+\_\+of (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtains an array of value$<$\+T$>$s. Note that elements may be nullptr if they cannot be converted to a value$<$\+T$>$. \mbox{\Hypertarget{classcpptoml_1_1array_a2fbfb95c5dbe4d1faa7cd8a44a3e6012}\label{classcpptoml_1_1array_a2fbfb95c5dbe4d1faa7cd8a44a3e6012}} 
+\index{cpptoml::array@{cpptoml::array}!at@{at}}
+\index{at@{at}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{at()}{at()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ cpptoml\+::array\+::at (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{idx }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1array_a8565b6cdf5067c19c69ae11510f82e5a}\label{classcpptoml_1_1array_a8565b6cdf5067c19c69ae11510f82e5a}} 
+\index{cpptoml::array@{cpptoml::array}!begin@{begin}}
+\index{begin@{begin}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} cpptoml\+::array\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1array_a1a539b46f7cdea650163532b02218d92}\label{classcpptoml_1_1array_a1a539b46f7cdea650163532b02218d92}} 
+\index{cpptoml::array@{cpptoml::array}!begin@{begin}}
+\index{begin@{begin}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcpptoml_1_1array_adc3c44638883223631c8e9090bdac05d}{const\+\_\+iterator}} cpptoml\+::array\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1array_a9ab38af53133a1defc74305c54320e36}\label{classcpptoml_1_1array_a9ab38af53133a1defc74305c54320e36}} 
+\index{cpptoml::array@{cpptoml::array}!clear@{clear}}
+\index{clear@{clear}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{clear()}{clear()}}
+{\footnotesize\ttfamily void cpptoml\+::array\+::clear (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Clear the array \mbox{\Hypertarget{classcpptoml_1_1array_aecbf0b65103aa06a9f8b4aa563152040}\label{classcpptoml_1_1array_aecbf0b65103aa06a9f8b4aa563152040}} 
+\index{cpptoml::array@{cpptoml::array}!clone@{clone}}
+\index{clone@{clone}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ cpptoml\+::array\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classcpptoml_1_1base_a13bf42705f5a3cc6fc371fc9132f2e4a}{cpptoml\+::base}}.
+
+\mbox{\Hypertarget{classcpptoml_1_1array_a22b4e046221435bf10b1d40886c2928d}\label{classcpptoml_1_1array_a22b4e046221435bf10b1d40886c2928d}} 
+\index{cpptoml::array@{cpptoml::array}!end@{end}}
+\index{end@{end}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} cpptoml\+::array\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1array_a8780618cf3968b9051d4826951480030}\label{classcpptoml_1_1array_a8780618cf3968b9051d4826951480030}} 
+\index{cpptoml::array@{cpptoml::array}!end@{end}}
+\index{end@{end}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcpptoml_1_1array_adc3c44638883223631c8e9090bdac05d}{const\+\_\+iterator}} cpptoml\+::array\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1array_a6566c0a7ab80ee2725e54c58a23d6a91}\label{classcpptoml_1_1array_a6566c0a7ab80ee2725e54c58a23d6a91}} 
+\index{cpptoml::array@{cpptoml::array}!erase@{erase}}
+\index{erase@{erase}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{erase()}{erase()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} cpptoml\+::array\+::erase (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}}}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Erase an element from the array \mbox{\Hypertarget{classcpptoml_1_1array_afdc9c2172a9aa36b55f95da937067ea0}\label{classcpptoml_1_1array_afdc9c2172a9aa36b55f95da937067ea0}} 
+\index{cpptoml::array@{cpptoml::array}!get@{get}}
+\index{get@{get}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ $>$ \& cpptoml\+::array\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtains the array (vector) of base values. \mbox{\Hypertarget{classcpptoml_1_1array_a0a4784554a14dbc56989dff2cd3f73e8}\label{classcpptoml_1_1array_a0a4784554a14dbc56989dff2cd3f73e8}} 
+\index{cpptoml::array@{cpptoml::array}!get@{get}}
+\index{get@{get}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily const std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ $>$ \& cpptoml\+::array\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtains the array (vector) of base values. Const version. \mbox{\Hypertarget{classcpptoml_1_1array_a47e7629b178cfff08580f5d02e3cc508}\label{classcpptoml_1_1array_a47e7629b178cfff08580f5d02e3cc508}} 
+\index{cpptoml::array@{cpptoml::array}!get\_array\_of@{get\_array\_of}}
+\index{get\_array\_of@{get\_array\_of}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{get\_array\_of()}{get\_array\_of()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{structcpptoml_1_1array__of__trait}{array\+\_\+of\+\_\+trait}}$<$ T $>$\+::return\+\_\+type cpptoml\+::array\+::get\+\_\+array\+\_\+of (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtains a option$<$vector$<$\+T$>$$>$. The option will be empty if the array contains values that are not of type T. \mbox{\Hypertarget{classcpptoml_1_1array_a0dfa6f500a16ff52743da3299748e0c3}\label{classcpptoml_1_1array_a0dfa6f500a16ff52743da3299748e0c3}} 
+\index{cpptoml::array@{cpptoml::array}!get\_array\_of@{get\_array\_of}}
+\index{get\_array\_of@{get\_array\_of}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{get\_array\_of()}{get\_array\_of()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$$>$ \\
+\mbox{\hyperlink{structcpptoml_1_1array__of__trait}{array\+\_\+of\+\_\+trait}}$<$ \mbox{\hyperlink{classcpptoml_1_1array}{array}} $>$\+::return\+\_\+type cpptoml\+::array\+::get\+\_\+array\+\_\+of (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtains a option$<$vector$<$\+T$>$$>$. The option will be empty if the array contains values that are not of type T. \mbox{\Hypertarget{classcpptoml_1_1array_a2baf1399c43c941321bdc86cbbed0dc1}\label{classcpptoml_1_1array_a2baf1399c43c941321bdc86cbbed0dc1}} 
+\index{cpptoml::array@{cpptoml::array}!insert@{insert}}
+\index{insert@{insert}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} cpptoml\+::array\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}}}]{position,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1array}{array}} $>$ \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Insert an array into the array \mbox{\Hypertarget{classcpptoml_1_1array_a5bdbb27144823af65e4d5f2b387ae9df}\label{classcpptoml_1_1array_a5bdbb27144823af65e4d5f2b387ae9df}} 
+\index{cpptoml::array@{cpptoml::array}!insert@{insert}}
+\index{insert@{insert}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} cpptoml\+::array\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}}}]{position,  }\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1value}{value}}$<$ T $>$ $>$ \&}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Insert a value into the array \mbox{\Hypertarget{classcpptoml_1_1array_ad095605f299379d6065882cd9789e8d0}\label{classcpptoml_1_1array_ad095605f299379d6065882cd9789e8d0}} 
+\index{cpptoml::array@{cpptoml::array}!insert@{insert}}
+\index{insert@{insert}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{insert()}{insert()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}} cpptoml\+::array\+::insert (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcpptoml_1_1array_af17885074b4f14eb50f82d5b54973e34}{iterator}}}]{position,  }\item[{T \&\&}]{val,  }\item[{typename \mbox{\hyperlink{structcpptoml_1_1value__traits}{value\+\_\+traits}}$<$ T $>$\+::type $\ast$}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convenience function for inserting a simple element in the array \mbox{\Hypertarget{classcpptoml_1_1array_a4d42ae29bac6386a8bd83cac6863de79}\label{classcpptoml_1_1array_a4d42ae29bac6386a8bd83cac6863de79}} 
+\index{cpptoml::array@{cpptoml::array}!is\_array@{is\_array}}
+\index{is\_array@{is\_array}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{is\_array()}{is\_array()}}
+{\footnotesize\ttfamily virtual bool cpptoml\+::array\+::is\+\_\+array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Determines if the TOML element is an array of \char`\"{}leaf\char`\"{} elements. 
+
+Reimplemented from \mbox{\hyperlink{classcpptoml_1_1base_ab712507c29bfa718728700af6180cac8}{cpptoml\+::base}}.
+
+\mbox{\Hypertarget{classcpptoml_1_1array_a300c0e5a3dc9ca6aa12dcd003a5a0593}\label{classcpptoml_1_1array_a300c0e5a3dc9ca6aa12dcd003a5a0593}} 
+\index{cpptoml::array@{cpptoml::array}!nested\_array@{nested\_array}}
+\index{nested\_array@{nested\_array}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{nested\_array()}{nested\_array()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1array}{array}} $>$ $>$ cpptoml\+::array\+::nested\+\_\+array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Obtains an array of arrays. Note that elements may be nullptr if they cannot be converted to a array. \mbox{\Hypertarget{classcpptoml_1_1array_a1d1742c6eeb553a6f082e9741c18ede2}\label{classcpptoml_1_1array_a1d1742c6eeb553a6f082e9741c18ede2}} 
+\index{cpptoml::array@{cpptoml::array}!operator=@{operator=}}
+\index{operator=@{operator=}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classcpptoml_1_1array}{array}} \& cpptoml\+::array\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcpptoml_1_1array}{array}} \&}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1array_ae0d8668e66090fc74679ca190aae9132}\label{classcpptoml_1_1array_ae0d8668e66090fc74679ca190aae9132}} 
+\index{cpptoml::array@{cpptoml::array}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily void cpptoml\+::array\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1array}{array}} $>$ \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add an array to the end of the array \mbox{\Hypertarget{classcpptoml_1_1array_a7cb778f226d2695cfeb839113f1c0b5e}\label{classcpptoml_1_1array_a7cb778f226d2695cfeb839113f1c0b5e}} 
+\index{cpptoml::array@{cpptoml::array}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void cpptoml\+::array\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{const std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1value}{value}}$<$ T $>$ $>$ \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Add a value to the end of the array \mbox{\Hypertarget{classcpptoml_1_1array_ad8225c455bc24816332fa82d00b014c1}\label{classcpptoml_1_1array_ad8225c455bc24816332fa82d00b014c1}} 
+\index{cpptoml::array@{cpptoml::array}!push\_back@{push\_back}}
+\index{push\_back@{push\_back}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{push\_back()}{push\_back()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void cpptoml\+::array\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{T \&\&}]{val,  }\item[{typename \mbox{\hyperlink{structcpptoml_1_1value__traits}{value\+\_\+traits}}$<$ T $>$\+::type $\ast$}]{ = {\ttfamily 0} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Convenience function for adding a simple element to the end of the array. \mbox{\Hypertarget{classcpptoml_1_1array_a32a2f15d2483e14d0edb0d2d338454f0}\label{classcpptoml_1_1array_a32a2f15d2483e14d0edb0d2d338454f0}} 
+\index{cpptoml::array@{cpptoml::array}!reserve@{reserve}}
+\index{reserve@{reserve}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{reserve()}{reserve()}}
+{\footnotesize\ttfamily void cpptoml\+::array\+::reserve (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classcpptoml_1_1array_a91f67a2e7e24602322364434cdc7c473}{size\+\_\+type}}}]{n }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Reserve space for n values. 
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1array_aaf6a4e7fd8f86d507279f7c319dfc5a3}\label{classcpptoml_1_1array_aaf6a4e7fd8f86d507279f7c319dfc5a3}} 
+\index{cpptoml::array@{cpptoml::array}!make\_array@{make\_array}}
+\index{make\_array@{make\_array}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{make\_array}{make\_array}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1array}{array}} $>$ make\+\_\+array (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1array_a03b5e8918772e4da3b99e15ee8125d16}\label{classcpptoml_1_1array_a03b5e8918772e4da3b99e15ee8125d16}} 
+\index{cpptoml::array@{cpptoml::array}!values\_@{values\_}}
+\index{values\_@{values\_}!cpptoml::array@{cpptoml::array}}
+\doxysubsubsection{\texorpdfstring{values\_}{values\_}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{classcpptoml_1_1base}{base}}$>$ $>$ cpptoml\+::array\+::values\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\mbox{\hyperlink{cpptoml_8h}{cpptoml.\+h}}\end{DoxyCompactItemize}

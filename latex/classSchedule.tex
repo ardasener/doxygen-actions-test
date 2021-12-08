@@ -1,0 +1,297 @@
+\hypertarget{classSchedule}{}\doxysection{Schedule Class Reference}
+\label{classSchedule}\index{Schedule@{Schedule}}
+
+
+Collaboration diagram for Schedule\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=222pt]{classSchedule__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSchedule_a878716f4043a016224a14f78974edf1d}{Schedule}} ()
+\item 
+\mbox{\hyperlink{classSchedule_a4806b985197d35c00b9e707c0ed87998}{$\sim$\+Schedule}} ()
+\item 
+\mbox{\hyperlink{classSchedule_a1dd4f8682cb00be0375a9522d01694c9}{Schedule}} (\mbox{\hyperlink{classConfig}{Config}} \&config)
+\item 
+\mbox{\hyperlink{classSchedule_a0fbbb8a100b7b7a941af24c73b9cd7c0}{Schedule}} (const \mbox{\hyperlink{classSchedule}{Schedule}} \&c)
+\item 
+void \mbox{\hyperlink{classSchedule_af733abff1715838bb2fd57f2401375a5}{calculate\+Fitness}} ()
+\item 
+int \mbox{\hyperlink{classSchedule_ae7c41a41772ac4667d2536b4cb5fa757}{get\+Fitness}} () const
+\item 
+void \mbox{\hyperlink{classSchedule_aa7c1f7878020c69bc277534b15cd4021}{set\+Fitness}} (int t\+\_\+fitness)
+\item 
+void \mbox{\hyperlink{classSchedule_a60493c4a10982a0c2a20c360247d8d0a}{mutation}} ()
+\item 
+\mbox{\hyperlink{classSchedule}{Schedule}} $\ast$ \mbox{\hyperlink{classSchedule_acb06b032f0510757d045655bbd164095}{crossover}} (\mbox{\hyperlink{classSchedule}{Schedule}} \&parent2) const
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCourseTime}{Course\+Time}} $>$ $\ast$ \mbox{\hyperlink{classSchedule_a38d5a48fe5004bec9669f4cda1fbc3e1}{get\+Course\+Times}} ()
+\item 
+int \mbox{\hyperlink{classSchedule_a2f6d98b029d3d5e0da2005dd29dd9d43}{get\+Size}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSchedule}{Schedule}} $\ast$ \mbox{\hyperlink{classSchedule_a5902dcb76dbdee632d6c63ee7b662b09}{get\+Random\+Schedule}} (\mbox{\hyperlink{classConfig}{Config}} \&config)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classSchedule_ac30a086a94f3777a16d2ec34457e1654}{is\+Recitation}} (\mbox{\hyperlink{classCourse}{Course}} $\ast$c)
+\item 
+bool \mbox{\hyperlink{classSchedule_aa8cefdc2d777a3a43f30f5aa34773330}{instructor\+Collision}} (\mbox{\hyperlink{classCourse}{Course}} $\ast$c1, \mbox{\hyperlink{classCourse}{Course}} $\ast$c2)
+\item 
+int \mbox{\hyperlink{classSchedule_a39428c3775578554a2841c64f2b37cc3}{block\+Collision\+Count}} (\mbox{\hyperlink{classCourse}{Course}} $\ast$c1, \mbox{\hyperlink{classCourse}{Course}} $\ast$c2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classSchedule_aeb5409cc139a9e953c013d5e6692f5ca}{m\+\_\+number\+Of\+Crossover\+Points}}
+\begin{DoxyCompactList}\small\item\em Number of points to be taken from the other schedule during crossovers. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSchedule_aaf9871ddccb1539476ceef03861efe82}{m\+\_\+mutation\+Size}}
+\begin{DoxyCompactList}\small\item\em Number of points to be randomly changed during mutations. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSchedule_a1923e9cdd686f81cfdd2524394cb1aa0}{m\+\_\+crossover\+Probability}}
+\begin{DoxyCompactList}\small\item\em Chance of a crossover to occur (between 0 and 100) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSchedule_a7f9a256c3246dd88ce76782eca49df75}{m\+\_\+mutation\+Probability}}
+\begin{DoxyCompactList}\small\item\em Chance of a mutation to occur (between 0 and 100) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSchedule_a304c0669b4f9a3e87ba3bf00b1139f7e}{m\+\_\+fitness}}
+\item 
+bool \mbox{\hyperlink{classSchedule_a49efbd5b910d6db0d78ef3538b8bc0ca}{m\+\_\+variable\+Mutations}}
+\begin{DoxyCompactList}\small\item\em If true, mutation sizes are randomized between 0 and 2$\ast$m\+\_\+mutation\+Size. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classTimeSlot}{Time\+Slot}} $>$ $\ast$ \mbox{\hyperlink{classSchedule_ac3a5dca951946561ab8e533117e5cd5f}{m\+\_\+slots}}
+\begin{DoxyCompactList}\small\item\em A vector of all time slots. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCourse}{Course}} $>$ $\ast$ \mbox{\hyperlink{classSchedule_a49b8987016f7b0b03b1d78cec0701126}{m\+\_\+courses}}
+\begin{DoxyCompactList}\small\item\em A vector of all courses. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classClassroom}{Classroom}} $>$ $\ast$ \mbox{\hyperlink{classSchedule_a118acb12ab373915d4da3bdfa1bca9d6}{m\+\_\+classrooms}}
+\begin{DoxyCompactList}\small\item\em A vector of all classrooms. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classCourseTime}{Course\+Time}} $>$ $\ast$ \mbox{\hyperlink{classSchedule_afda026042abd858df84328e6ce239bb6}{m\+\_\+course\+Times}}
+\begin{DoxyCompactList}\small\item\em The schedule itself, a vector of course times. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classConcurrent}{Concurrent}} $\ast$ \mbox{\hyperlink{classSchedule_a7a192a65d06b289ed438b41c499cccf5}{m\+\_\+concurrent}}
+\begin{DoxyCompactList}\small\item\em An object for accessing concurrency information. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classConfig}{Config}} $\ast$ \mbox{\hyperlink{classSchedule_a688a1b3ba215f9fc760283f78a4abaf5}{m\+\_\+config}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A representation of a weekly course schedule. Also a chromosome in the terms of a genetic algorithm 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSchedule_a878716f4043a016224a14f78974edf1d}\label{classSchedule_a878716f4043a016224a14f78974edf1d}} 
+\index{Schedule@{Schedule}!Schedule@{Schedule}}
+\index{Schedule@{Schedule}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{Schedule()}{Schedule()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Schedule\+::\+Schedule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchedule_a4806b985197d35c00b9e707c0ed87998}\label{classSchedule_a4806b985197d35c00b9e707c0ed87998}} 
+\index{Schedule@{Schedule}!````~Schedule@{$\sim$Schedule}}
+\index{````~Schedule@{$\sim$Schedule}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{$\sim$Schedule()}{~Schedule()}}
+{\footnotesize\ttfamily Schedule\+::$\sim$\+Schedule (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchedule_a1dd4f8682cb00be0375a9522d01694c9}\label{classSchedule_a1dd4f8682cb00be0375a9522d01694c9}} 
+\index{Schedule@{Schedule}!Schedule@{Schedule}}
+\index{Schedule@{Schedule}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{Schedule()}{Schedule()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Schedule\+::\+Schedule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classConfig}{Config}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchedule_a0fbbb8a100b7b7a941af24c73b9cd7c0}\label{classSchedule_a0fbbb8a100b7b7a941af24c73b9cd7c0}} 
+\index{Schedule@{Schedule}!Schedule@{Schedule}}
+\index{Schedule@{Schedule}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{Schedule()}{Schedule()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Schedule\+::\+Schedule (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSchedule}{Schedule}} \&}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSchedule_a39428c3775578554a2841c64f2b37cc3}\label{classSchedule_a39428c3775578554a2841c64f2b37cc3}} 
+\index{Schedule@{Schedule}!blockCollisionCount@{blockCollisionCount}}
+\index{blockCollisionCount@{blockCollisionCount}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{blockCollisionCount()}{blockCollisionCount()}}
+{\footnotesize\ttfamily int Schedule\+::block\+Collision\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCourse}{Course}} $\ast$}]{c1,  }\item[{\mbox{\hyperlink{classCourse}{Course}} $\ast$}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchedule_af733abff1715838bb2fd57f2401375a5}\label{classSchedule_af733abff1715838bb2fd57f2401375a5}} 
+\index{Schedule@{Schedule}!calculateFitness@{calculateFitness}}
+\index{calculateFitness@{calculateFitness}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{calculateFitness()}{calculateFitness()}}
+{\footnotesize\ttfamily void Schedule\+::calculate\+Fitness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Calculates the fitness of this schedule by applying penalties to certain situations. This is explained in more detail in Technical Details section. \mbox{\Hypertarget{classSchedule_acb06b032f0510757d045655bbd164095}\label{classSchedule_acb06b032f0510757d045655bbd164095}} 
+\index{Schedule@{Schedule}!crossover@{crossover}}
+\index{crossover@{crossover}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{crossover()}{crossover()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSchedule}{Schedule}} $\ast$ Schedule\+::crossover (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSchedule}{Schedule}} \&}]{parent2 }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Crosses over this schedule with another scheduling and returns a pointer to the new schedule. During the crossover this schedule is copied and then a number of points defined in m\+\_\+number\+Of\+Crossover\+Points is taken from the other course given as parameter to this function. \mbox{\Hypertarget{classSchedule_a38d5a48fe5004bec9669f4cda1fbc3e1}\label{classSchedule_a38d5a48fe5004bec9669f4cda1fbc3e1}} 
+\index{Schedule@{Schedule}!getCourseTimes@{getCourseTimes}}
+\index{getCourseTimes@{getCourseTimes}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{getCourseTimes()}{getCourseTimes()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCourseTime}{Course\+Time}} $>$ $\ast$ Schedule\+::get\+Course\+Times (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchedule_ae7c41a41772ac4667d2536b4cb5fa757}\label{classSchedule_ae7c41a41772ac4667d2536b4cb5fa757}} 
+\index{Schedule@{Schedule}!getFitness@{getFitness}}
+\index{getFitness@{getFitness}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{getFitness()}{getFitness()}}
+{\footnotesize\ttfamily int Schedule\+::get\+Fitness (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchedule_a5902dcb76dbdee632d6c63ee7b662b09}\label{classSchedule_a5902dcb76dbdee632d6c63ee7b662b09}} 
+\index{Schedule@{Schedule}!getRandomSchedule@{getRandomSchedule}}
+\index{getRandomSchedule@{getRandomSchedule}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{getRandomSchedule()}{getRandomSchedule()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classSchedule}{Schedule}} $\ast$ Schedule\+::get\+Random\+Schedule (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classConfig}{Config}} \&}]{config }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classSchedule_a2f6d98b029d3d5e0da2005dd29dd9d43}\label{classSchedule_a2f6d98b029d3d5e0da2005dd29dd9d43}} 
+\index{Schedule@{Schedule}!getSize@{getSize}}
+\index{getSize@{getSize}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{getSize()}{getSize()}}
+{\footnotesize\ttfamily int Schedule\+::get\+Size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSchedule_aa8cefdc2d777a3a43f30f5aa34773330}\label{classSchedule_aa8cefdc2d777a3a43f30f5aa34773330}} 
+\index{Schedule@{Schedule}!instructorCollision@{instructorCollision}}
+\index{instructorCollision@{instructorCollision}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{instructorCollision()}{instructorCollision()}}
+{\footnotesize\ttfamily bool Schedule\+::instructor\+Collision (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCourse}{Course}} $\ast$}]{c1,  }\item[{\mbox{\hyperlink{classCourse}{Course}} $\ast$}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchedule_ac30a086a94f3777a16d2ec34457e1654}\label{classSchedule_ac30a086a94f3777a16d2ec34457e1654}} 
+\index{Schedule@{Schedule}!isRecitation@{isRecitation}}
+\index{isRecitation@{isRecitation}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{isRecitation()}{isRecitation()}}
+{\footnotesize\ttfamily bool Schedule\+::is\+Recitation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCourse}{Course}} $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchedule_a60493c4a10982a0c2a20c360247d8d0a}\label{classSchedule_a60493c4a10982a0c2a20c360247d8d0a}} 
+\index{Schedule@{Schedule}!mutation@{mutation}}
+\index{mutation@{mutation}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{mutation()}{mutation()}}
+{\footnotesize\ttfamily void Schedule\+::mutation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Mutates this schedule in place by changing a random selection of classes to random classrooms and time slots. Number of points mutated is defined in the m\+\_\+mutation\+Size variable. If variable mutations is enabled, then a random value between 0 and m\+\_\+mutation\+Size is used instead. \mbox{\Hypertarget{classSchedule_aa7c1f7878020c69bc277534b15cd4021}\label{classSchedule_aa7c1f7878020c69bc277534b15cd4021}} 
+\index{Schedule@{Schedule}!setFitness@{setFitness}}
+\index{setFitness@{setFitness}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{setFitness()}{setFitness()}}
+{\footnotesize\ttfamily void Schedule\+::set\+Fitness (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+fitness }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSchedule_a118acb12ab373915d4da3bdfa1bca9d6}\label{classSchedule_a118acb12ab373915d4da3bdfa1bca9d6}} 
+\index{Schedule@{Schedule}!m\_classrooms@{m\_classrooms}}
+\index{m\_classrooms@{m\_classrooms}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_classrooms}{m\_classrooms}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classClassroom}{Classroom}}$>$$\ast$ Schedule\+::m\+\_\+classrooms\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A vector of all classrooms. 
+
+\mbox{\Hypertarget{classSchedule_a7a192a65d06b289ed438b41c499cccf5}\label{classSchedule_a7a192a65d06b289ed438b41c499cccf5}} 
+\index{Schedule@{Schedule}!m\_concurrent@{m\_concurrent}}
+\index{m\_concurrent@{m\_concurrent}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_concurrent}{m\_concurrent}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classConcurrent}{Concurrent}}$\ast$ Schedule\+::m\+\_\+concurrent\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+An object for accessing concurrency information. 
+
+\mbox{\Hypertarget{classSchedule_a688a1b3ba215f9fc760283f78a4abaf5}\label{classSchedule_a688a1b3ba215f9fc760283f78a4abaf5}} 
+\index{Schedule@{Schedule}!m\_config@{m\_config}}
+\index{m\_config@{m\_config}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_config}{m\_config}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classConfig}{Config}}$\ast$ Schedule\+::m\+\_\+config\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSchedule_a49b8987016f7b0b03b1d78cec0701126}\label{classSchedule_a49b8987016f7b0b03b1d78cec0701126}} 
+\index{Schedule@{Schedule}!m\_courses@{m\_courses}}
+\index{m\_courses@{m\_courses}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_courses}{m\_courses}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCourse}{Course}}$>$$\ast$ Schedule\+::m\+\_\+courses\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A vector of all courses. 
+
+\mbox{\Hypertarget{classSchedule_afda026042abd858df84328e6ce239bb6}\label{classSchedule_afda026042abd858df84328e6ce239bb6}} 
+\index{Schedule@{Schedule}!m\_courseTimes@{m\_courseTimes}}
+\index{m\_courseTimes@{m\_courseTimes}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_courseTimes}{m\_courseTimes}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classCourseTime}{Course\+Time}}$>$$\ast$ Schedule\+::m\+\_\+course\+Times\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The schedule itself, a vector of course times. 
+
+\mbox{\Hypertarget{classSchedule_a1923e9cdd686f81cfdd2524394cb1aa0}\label{classSchedule_a1923e9cdd686f81cfdd2524394cb1aa0}} 
+\index{Schedule@{Schedule}!m\_crossoverProbability@{m\_crossoverProbability}}
+\index{m\_crossoverProbability@{m\_crossoverProbability}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_crossoverProbability}{m\_crossoverProbability}}
+{\footnotesize\ttfamily int Schedule\+::m\+\_\+crossover\+Probability\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Chance of a crossover to occur (between 0 and 100) 
+
+\mbox{\Hypertarget{classSchedule_a304c0669b4f9a3e87ba3bf00b1139f7e}\label{classSchedule_a304c0669b4f9a3e87ba3bf00b1139f7e}} 
+\index{Schedule@{Schedule}!m\_fitness@{m\_fitness}}
+\index{m\_fitness@{m\_fitness}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_fitness}{m\_fitness}}
+{\footnotesize\ttfamily int Schedule\+::m\+\_\+fitness\hspace{0.3cm}{\ttfamily [private]}}
+
+Fitness value of the chromosome calculated with above penalties. Lower is better (perhaps confusingly). \mbox{\Hypertarget{classSchedule_a7f9a256c3246dd88ce76782eca49df75}\label{classSchedule_a7f9a256c3246dd88ce76782eca49df75}} 
+\index{Schedule@{Schedule}!m\_mutationProbability@{m\_mutationProbability}}
+\index{m\_mutationProbability@{m\_mutationProbability}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_mutationProbability}{m\_mutationProbability}}
+{\footnotesize\ttfamily int Schedule\+::m\+\_\+mutation\+Probability\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Chance of a mutation to occur (between 0 and 100) 
+
+\mbox{\Hypertarget{classSchedule_aaf9871ddccb1539476ceef03861efe82}\label{classSchedule_aaf9871ddccb1539476ceef03861efe82}} 
+\index{Schedule@{Schedule}!m\_mutationSize@{m\_mutationSize}}
+\index{m\_mutationSize@{m\_mutationSize}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_mutationSize}{m\_mutationSize}}
+{\footnotesize\ttfamily int Schedule\+::m\+\_\+mutation\+Size\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of points to be randomly changed during mutations. 
+
+\mbox{\Hypertarget{classSchedule_aeb5409cc139a9e953c013d5e6692f5ca}\label{classSchedule_aeb5409cc139a9e953c013d5e6692f5ca}} 
+\index{Schedule@{Schedule}!m\_numberOfCrossoverPoints@{m\_numberOfCrossoverPoints}}
+\index{m\_numberOfCrossoverPoints@{m\_numberOfCrossoverPoints}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_numberOfCrossoverPoints}{m\_numberOfCrossoverPoints}}
+{\footnotesize\ttfamily int Schedule\+::m\+\_\+number\+Of\+Crossover\+Points\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Number of points to be taken from the other schedule during crossovers. 
+
+\mbox{\Hypertarget{classSchedule_ac3a5dca951946561ab8e533117e5cd5f}\label{classSchedule_ac3a5dca951946561ab8e533117e5cd5f}} 
+\index{Schedule@{Schedule}!m\_slots@{m\_slots}}
+\index{m\_slots@{m\_slots}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_slots}{m\_slots}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{classTimeSlot}{Time\+Slot}}$>$$\ast$ Schedule\+::m\+\_\+slots\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+A vector of all time slots. 
+
+\mbox{\Hypertarget{classSchedule_a49efbd5b910d6db0d78ef3538b8bc0ca}\label{classSchedule_a49efbd5b910d6db0d78ef3538b8bc0ca}} 
+\index{Schedule@{Schedule}!m\_variableMutations@{m\_variableMutations}}
+\index{m\_variableMutations@{m\_variableMutations}!Schedule@{Schedule}}
+\doxysubsubsection{\texorpdfstring{m\_variableMutations}{m\_variableMutations}}
+{\footnotesize\ttfamily bool Schedule\+::m\+\_\+variable\+Mutations\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+If true, mutation sizes are randomized between 0 and 2$\ast$m\+\_\+mutation\+Size. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/algorithm/\mbox{\hyperlink{schedule_8cpp}{schedule.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,87 @@
+\hypertarget{load_8cpp}{}\doxysection{src/load/load.cpp File Reference}
+\label{load_8cpp}\index{src/load/load.cpp@{src/load/load.cpp}}
+{\ttfamily \#include \char`\"{}json.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include \char`\"{}../model/course.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../model/classroom.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../model/concurrent.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}../model/timeslot.\+cpp\char`\"{}}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+Include dependency graph for load.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{load_8cpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=170pt]{load_8cpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{load_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json}} = nlohmann\+::json
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{load_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json}} \mbox{\hyperlink{load_8cpp_a2635bb593d097acd5d99bf64b1c745d4}{file\+\_\+to\+\_\+json}} (std\+::string t\+\_\+filename)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classCourse}{Course}} $>$ $\ast$ \mbox{\hyperlink{load_8cpp_a6e632ff2688cf3e30c9b738f318cb756}{load\+\_\+courses}} (std\+::string t\+\_\+filename)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classClassroom}{Classroom}} $>$ $\ast$ \mbox{\hyperlink{load_8cpp_afaa2513e40707b2581510c26f27ab9ff}{load\+\_\+classroom}} (std\+::string t\+\_\+filename)
+\item 
+\mbox{\hyperlink{classConcurrent}{Concurrent}} $\ast$ \mbox{\hyperlink{load_8cpp_aa9cc8393e776babf7f71fff7944e2ed0}{load\+\_\+concurrent}} (std\+::string t\+\_\+filename)
+\item 
+std\+::vector$<$ \mbox{\hyperlink{classTimeSlot}{Time\+Slot}} $>$ $\ast$ \mbox{\hyperlink{load_8cpp_a7a2fef07c9922d3566a06fae7f23e3b8}{generate\+\_\+time\+\_\+slots}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{load_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}\label{load_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}} 
+\index{load.cpp@{load.cpp}!json@{json}}
+\index{json@{json}!load.cpp@{load.cpp}}
+\doxysubsubsection{\texorpdfstring{json}{json}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{load_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json}} =  nlohmann\+::json}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{load_8cpp_a2635bb593d097acd5d99bf64b1c745d4}\label{load_8cpp_a2635bb593d097acd5d99bf64b1c745d4}} 
+\index{load.cpp@{load.cpp}!file\_to\_json@{file\_to\_json}}
+\index{file\_to\_json@{file\_to\_json}!load.cpp@{load.cpp}}
+\doxysubsubsection{\texorpdfstring{file\_to\_json()}{file\_to\_json()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{load_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json}} file\+\_\+to\+\_\+json (\begin{DoxyParamCaption}\item[{std\+::string}]{t\+\_\+filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{load_8cpp_a7a2fef07c9922d3566a06fae7f23e3b8}\label{load_8cpp_a7a2fef07c9922d3566a06fae7f23e3b8}} 
+\index{load.cpp@{load.cpp}!generate\_time\_slots@{generate\_time\_slots}}
+\index{generate\_time\_slots@{generate\_time\_slots}!load.cpp@{load.cpp}}
+\doxysubsubsection{\texorpdfstring{generate\_time\_slots()}{generate\_time\_slots()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classTimeSlot}{Time\+Slot}} $>$ $\ast$ generate\+\_\+time\+\_\+slots (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{load_8cpp_afaa2513e40707b2581510c26f27ab9ff}\label{load_8cpp_afaa2513e40707b2581510c26f27ab9ff}} 
+\index{load.cpp@{load.cpp}!load\_classroom@{load\_classroom}}
+\index{load\_classroom@{load\_classroom}!load.cpp@{load.cpp}}
+\doxysubsubsection{\texorpdfstring{load\_classroom()}{load\_classroom()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classClassroom}{Classroom}} $>$ $\ast$ load\+\_\+classroom (\begin{DoxyParamCaption}\item[{std\+::string}]{t\+\_\+filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{load_8cpp_aa9cc8393e776babf7f71fff7944e2ed0}\label{load_8cpp_aa9cc8393e776babf7f71fff7944e2ed0}} 
+\index{load.cpp@{load.cpp}!load\_concurrent@{load\_concurrent}}
+\index{load\_concurrent@{load\_concurrent}!load.cpp@{load.cpp}}
+\doxysubsubsection{\texorpdfstring{load\_concurrent()}{load\_concurrent()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classConcurrent}{Concurrent}} $\ast$ load\+\_\+concurrent (\begin{DoxyParamCaption}\item[{std\+::string}]{t\+\_\+filename }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{load_8cpp_a6e632ff2688cf3e30c9b738f318cb756}\label{load_8cpp_a6e632ff2688cf3e30c9b738f318cb756}} 
+\index{load.cpp@{load.cpp}!load\_courses@{load\_courses}}
+\index{load\_courses@{load\_courses}!load.cpp@{load.cpp}}
+\doxysubsubsection{\texorpdfstring{load\_courses()}{load\_courses()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classCourse}{Course}} $>$ $\ast$ load\+\_\+courses (\begin{DoxyParamCaption}\item[{std\+::string}]{t\+\_\+filename }\end{DoxyParamCaption})}
+

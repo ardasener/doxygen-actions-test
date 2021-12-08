@@ -1,0 +1,165 @@
+\hypertarget{classtoml_1_1internal_1_1Lexer}{}\doxysection{toml\+::internal\+::Lexer Class Reference}
+\label{classtoml_1_1internal_1_1Lexer}\index{toml::internal::Lexer@{toml::internal::Lexer}}
+
+
+{\ttfamily \#include $<$toml.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_a24e66c418f8148dfbff011ff31a18a77}{Lexer}} (std\+::istream \&is)
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_a47820fab9237e072de994f9be4268bbb}{next\+Key\+Token}} ()
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_aaf9501c898e611ceb2eaf5d7965deb7d}{next\+Value\+Token}} ()
+\item 
+int \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_a1de958e879e27b3e6586c57cdf4b9a9d}{line\+No}} () const
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_afa709fb10637453878f140938b094461}{skip\+UTF8\+BOM}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_a5fd59ebf85a3eff5c2914ded5c56f022}{current}} (char $\ast$c)
+\item 
+void \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_a40cc42e9ac41534e4cf62affe6b1854d}{next}} ()
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_afaa62f2cb52dbba499cd83dd164ce882}{consume}} (char c)
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_a02aa4ba23fee5c9a9090f66e4dd0883f}{next\+Token}} (bool is\+Value\+Token)
+\item 
+void \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_a4bbf01272a9933ae7fefe4073c724430}{skip\+Until\+New\+Line}} ()
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_ae4f29343ced63d8a0d62dcadd8c8dcc3}{next\+String\+Double\+Quote}} ()
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_af55910f39573a059e118caca1e5163b8}{next\+String\+Single\+Quote}} ()
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_aeb90a36a0a58bce3bc98c4a9e54556d7}{next\+Key}} ()
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_ad6bd0d77cba3a5d24f47c5b3c32b3cce}{next\+Value}} ()
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_aa7e06223d4dff25b662b172c4ef41fa4}{parse\+As\+Time}} (const std\+::string \&)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::istream \& \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_af871db7840c9222d4ba754ab1d818f63}{is\+\_\+}}
+\item 
+int \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer_a56f6a00742a1175ee91bc6055ffb0462}{line\+No\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_a24e66c418f8148dfbff011ff31a18a77}\label{classtoml_1_1internal_1_1Lexer_a24e66c418f8148dfbff011ff31a18a77}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!Lexer@{Lexer}}
+\index{Lexer@{Lexer}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{Lexer()}{Lexer()}}
+{\footnotesize\ttfamily toml\+::internal\+::\+Lexer\+::\+Lexer (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_afaa62f2cb52dbba499cd83dd164ce882}\label{classtoml_1_1internal_1_1Lexer_afaa62f2cb52dbba499cd83dd164ce882}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!consume@{consume}}
+\index{consume@{consume}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Lexer\+::consume (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_a5fd59ebf85a3eff5c2914ded5c56f022}\label{classtoml_1_1internal_1_1Lexer_a5fd59ebf85a3eff5c2914ded5c56f022}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!current@{current}}
+\index{current@{current}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{current()}{current()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Lexer\+::current (\begin{DoxyParamCaption}\item[{char $\ast$}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_a1de958e879e27b3e6586c57cdf4b9a9d}\label{classtoml_1_1internal_1_1Lexer_a1de958e879e27b3e6586c57cdf4b9a9d}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!lineNo@{lineNo}}
+\index{lineNo@{lineNo}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{lineNo()}{lineNo()}}
+{\footnotesize\ttfamily int toml\+::internal\+::\+Lexer\+::line\+No (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_a40cc42e9ac41534e4cf62affe6b1854d}\label{classtoml_1_1internal_1_1Lexer_a40cc42e9ac41534e4cf62affe6b1854d}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!next@{next}}
+\index{next@{next}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily void toml\+::internal\+::\+Lexer\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_aeb90a36a0a58bce3bc98c4a9e54556d7}\label{classtoml_1_1internal_1_1Lexer_aeb90a36a0a58bce3bc98c4a9e54556d7}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!nextKey@{nextKey}}
+\index{nextKey@{nextKey}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{nextKey()}{nextKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} toml\+::internal\+::\+Lexer\+::next\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_a47820fab9237e072de994f9be4268bbb}\label{classtoml_1_1internal_1_1Lexer_a47820fab9237e072de994f9be4268bbb}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!nextKeyToken@{nextKeyToken}}
+\index{nextKeyToken@{nextKeyToken}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{nextKeyToken()}{nextKeyToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} toml\+::internal\+::\+Lexer\+::next\+Key\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_ae4f29343ced63d8a0d62dcadd8c8dcc3}\label{classtoml_1_1internal_1_1Lexer_ae4f29343ced63d8a0d62dcadd8c8dcc3}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!nextStringDoubleQuote@{nextStringDoubleQuote}}
+\index{nextStringDoubleQuote@{nextStringDoubleQuote}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{nextStringDoubleQuote()}{nextStringDoubleQuote()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} toml\+::internal\+::\+Lexer\+::next\+String\+Double\+Quote (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_af55910f39573a059e118caca1e5163b8}\label{classtoml_1_1internal_1_1Lexer_af55910f39573a059e118caca1e5163b8}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!nextStringSingleQuote@{nextStringSingleQuote}}
+\index{nextStringSingleQuote@{nextStringSingleQuote}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{nextStringSingleQuote()}{nextStringSingleQuote()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} toml\+::internal\+::\+Lexer\+::next\+String\+Single\+Quote (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_a02aa4ba23fee5c9a9090f66e4dd0883f}\label{classtoml_1_1internal_1_1Lexer_a02aa4ba23fee5c9a9090f66e4dd0883f}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!nextToken@{nextToken}}
+\index{nextToken@{nextToken}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{nextToken()}{nextToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} toml\+::internal\+::\+Lexer\+::next\+Token (\begin{DoxyParamCaption}\item[{bool}]{is\+Value\+Token }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_ad6bd0d77cba3a5d24f47c5b3c32b3cce}\label{classtoml_1_1internal_1_1Lexer_ad6bd0d77cba3a5d24f47c5b3c32b3cce}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!nextValue@{nextValue}}
+\index{nextValue@{nextValue}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{nextValue()}{nextValue()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} toml\+::internal\+::\+Lexer\+::next\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_aaf9501c898e611ceb2eaf5d7965deb7d}\label{classtoml_1_1internal_1_1Lexer_aaf9501c898e611ceb2eaf5d7965deb7d}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!nextValueToken@{nextValueToken}}
+\index{nextValueToken@{nextValueToken}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{nextValueToken()}{nextValueToken()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} toml\+::internal\+::\+Lexer\+::next\+Value\+Token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_aa7e06223d4dff25b662b172c4ef41fa4}\label{classtoml_1_1internal_1_1Lexer_aa7e06223d4dff25b662b172c4ef41fa4}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!parseAsTime@{parseAsTime}}
+\index{parseAsTime@{parseAsTime}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{parseAsTime()}{parseAsTime()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} toml\+::internal\+::\+Lexer\+::parse\+As\+Time (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_a4bbf01272a9933ae7fefe4073c724430}\label{classtoml_1_1internal_1_1Lexer_a4bbf01272a9933ae7fefe4073c724430}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!skipUntilNewLine@{skipUntilNewLine}}
+\index{skipUntilNewLine@{skipUntilNewLine}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{skipUntilNewLine()}{skipUntilNewLine()}}
+{\footnotesize\ttfamily void toml\+::internal\+::\+Lexer\+::skip\+Until\+New\+Line (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_afa709fb10637453878f140938b094461}\label{classtoml_1_1internal_1_1Lexer_afa709fb10637453878f140938b094461}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!skipUTF8BOM@{skipUTF8BOM}}
+\index{skipUTF8BOM@{skipUTF8BOM}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{skipUTF8BOM()}{skipUTF8BOM()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Lexer\+::skip\+UTF8\+BOM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_af871db7840c9222d4ba754ab1d818f63}\label{classtoml_1_1internal_1_1Lexer_af871db7840c9222d4ba754ab1d818f63}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!is\_@{is\_}}
+\index{is\_@{is\_}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{is\_}{is\_}}
+{\footnotesize\ttfamily std\+::istream\& toml\+::internal\+::\+Lexer\+::is\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Lexer_a56f6a00742a1175ee91bc6055ffb0462}\label{classtoml_1_1internal_1_1Lexer_a56f6a00742a1175ee91bc6055ffb0462}} 
+\index{toml::internal::Lexer@{toml::internal::Lexer}!lineNo\_@{lineNo\_}}
+\index{lineNo\_@{lineNo\_}!toml::internal::Lexer@{toml::internal::Lexer}}
+\doxysubsubsection{\texorpdfstring{lineNo\_}{lineNo\_}}
+{\footnotesize\ttfamily int toml\+::internal\+::\+Lexer\+::line\+No\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\mbox{\hyperlink{toml_8h}{toml.\+h}}\end{DoxyCompactItemize}

@@ -1,0 +1,248 @@
+\hypertarget{namespacetoml_1_1internal}{}\doxysection{toml\+::internal Namespace Reference}
+\label{namespacetoml_1_1internal}\index{toml::internal@{toml::internal}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1internal_1_1call__traits__ref}{call\+\_\+traits\+\_\+ref}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1internal_1_1call__traits__value}{call\+\_\+traits\+\_\+value}}
+\item 
+class \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer}{Lexer}}
+\item 
+class \mbox{\hyperlink{classtoml_1_1internal_1_1Parser}{Parser}}
+\item 
+class \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1a}{Token\+Type}} \{ \newline
+\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aae65cbe0cfb31a63fa33484a323ac380f}{ERROR\+\_\+\+TOKEN}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa581953f6b20ad7f993b64b1dc632032e}{END\+\_\+\+OF\+\_\+\+FILE}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaa61685a08b8ddb7936032a222b7e01a6}{END\+\_\+\+OF\+\_\+\+LINE}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaf57e263e90cbbb939b6dc6b8db7992b7}{IDENT}}
+, \newline
+\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa63b588d5559f64f89a416e656880b949}{STRING}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aae096855f3e43b9427782559ad46e1e40}{MULTILINE\+\_\+\+STRING}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaa97b2c144243b2b9d2c593ec268b62f5}{BOOL}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa53f93baa3057821107c750323892fa92}{INT}}
+, \newline
+\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aafd3e4ece78a7d422280d5ed379482229}{DOUBLE}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa346ff32eaa3c09983fb2ec057816d352}{TIME}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa4d9b3e9fc12849d060371eb65154c751}{COMMA}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa40679521b5da0954b705341a2859f782}{DOT}}
+, \newline
+\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa969f331a87d8c958473c32b4d0e61a44}{EQUAL}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aad500138bf8f61d4b0b80413f4b76a82a}{LBRACKET}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa270adbd249f9997adc3208e92a57e066}{RBRACKET}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aad5e4de54911c050245979d940dc65c3a}{LBRACE}}
+, \newline
+\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa7907975edd3cb3611c6808f3ea6bd290}{RBRACE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{namespacetoml_1_1internal_a74eb33ae98e3abf00ca3eda60856bd8b}{remove\+Delimiter}} (const std\+::string \&s)
+\item 
+std\+::string \mbox{\hyperlink{namespacetoml_1_1internal_a6a38e599ef8d13c6643aaf3c8bd23f6a}{unescape}} (const std\+::string \&codepoint)
+\item 
+bool \mbox{\hyperlink{namespacetoml_1_1internal_a01c6f982376fc48c8d15259a289fec6d}{is\+Integer}} (const std\+::string \&s)
+\item 
+bool \mbox{\hyperlink{namespacetoml_1_1internal_a2ff5d5d37222e56121f0d5be31c5846e}{is\+Double}} (const std\+::string \&s)
+\item 
+std\+::string \mbox{\hyperlink{namespacetoml_1_1internal_ac8bf247366b3fbaabe2b2884e198e8db}{escape\+String}} (const std\+::string \&s)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}{type\+\_\+name}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_ac61f324217056b4cf3e6a245b737da36}{type\+\_\+name$<$ bool $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_ad90eb2f66cf4bf87a51538e6a37b58c7}{type\+\_\+name$<$ int $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a5851040cce656aed19b5220ad88c0397}{type\+\_\+name$<$ int64\+\_\+t $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_aa48b54a469d17315b1d16f3605cdffa2}{type\+\_\+name$<$ double $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_ab6b22a0dae173d416cd6bde14746f0a5}{type\+\_\+name$<$ std\+::string $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a213d942772e44d4baa7a6b0ac8b5374d}{type\+\_\+name$<$ toml\+::\+Time $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_ab1153102f2d9bb3c7169b5f6de1581ff}{type\+\_\+name$<$ toml\+::\+Array $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_ad82ecf38c58ca4b20ecb40d2df26187b}{type\+\_\+name$<$ toml\+::\+Table $>$}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1a}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1a}} 
+\index{toml::internal@{toml::internal}!TokenType@{TokenType}}
+\index{TokenType@{TokenType}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{TokenType}{TokenType}}
+{\footnotesize\ttfamily enum class \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1a}{toml\+::internal\+::\+Token\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{ERROR\_TOKEN@{ERROR\_TOKEN}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!ERROR\_TOKEN@{ERROR\_TOKEN}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aae65cbe0cfb31a63fa33484a323ac380f}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aae65cbe0cfb31a63fa33484a323ac380f}} 
+ERROR\+\_\+\+TOKEN&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{END\_OF\_FILE@{END\_OF\_FILE}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!END\_OF\_FILE@{END\_OF\_FILE}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa581953f6b20ad7f993b64b1dc632032e}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa581953f6b20ad7f993b64b1dc632032e}} 
+END\+\_\+\+OF\+\_\+\+FILE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{END\_OF\_LINE@{END\_OF\_LINE}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!END\_OF\_LINE@{END\_OF\_LINE}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaa61685a08b8ddb7936032a222b7e01a6}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaa61685a08b8ddb7936032a222b7e01a6}} 
+END\+\_\+\+OF\+\_\+\+LINE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{IDENT@{IDENT}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!IDENT@{IDENT}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaf57e263e90cbbb939b6dc6b8db7992b7}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaf57e263e90cbbb939b6dc6b8db7992b7}} 
+IDENT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{STRING@{STRING}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!STRING@{STRING}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa63b588d5559f64f89a416e656880b949}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa63b588d5559f64f89a416e656880b949}} 
+STRING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MULTILINE\_STRING@{MULTILINE\_STRING}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!MULTILINE\_STRING@{MULTILINE\_STRING}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aae096855f3e43b9427782559ad46e1e40}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aae096855f3e43b9427782559ad46e1e40}} 
+MULTILINE\+\_\+\+STRING&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{BOOL@{BOOL}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!BOOL@{BOOL}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaa97b2c144243b2b9d2c593ec268b62f5}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaa97b2c144243b2b9d2c593ec268b62f5}} 
+BOOL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INT@{INT}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!INT@{INT}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa53f93baa3057821107c750323892fa92}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa53f93baa3057821107c750323892fa92}} 
+INT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOUBLE@{DOUBLE}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!DOUBLE@{DOUBLE}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aafd3e4ece78a7d422280d5ed379482229}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aafd3e4ece78a7d422280d5ed379482229}} 
+DOUBLE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TIME@{TIME}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!TIME@{TIME}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa346ff32eaa3c09983fb2ec057816d352}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa346ff32eaa3c09983fb2ec057816d352}} 
+TIME&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{COMMA@{COMMA}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!COMMA@{COMMA}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa4d9b3e9fc12849d060371eb65154c751}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa4d9b3e9fc12849d060371eb65154c751}} 
+COMMA&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DOT@{DOT}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!DOT@{DOT}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa40679521b5da0954b705341a2859f782}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa40679521b5da0954b705341a2859f782}} 
+DOT&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{EQUAL@{EQUAL}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!EQUAL@{EQUAL}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa969f331a87d8c958473c32b4d0e61a44}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa969f331a87d8c958473c32b4d0e61a44}} 
+EQUAL&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LBRACKET@{LBRACKET}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!LBRACKET@{LBRACKET}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aad500138bf8f61d4b0b80413f4b76a82a}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aad500138bf8f61d4b0b80413f4b76a82a}} 
+LBRACKET&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RBRACKET@{RBRACKET}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!RBRACKET@{RBRACKET}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa270adbd249f9997adc3208e92a57e066}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa270adbd249f9997adc3208e92a57e066}} 
+RBRACKET&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LBRACE@{LBRACE}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!LBRACE@{LBRACE}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aad5e4de54911c050245979d940dc65c3a}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aad5e4de54911c050245979d940dc65c3a}} 
+LBRACE&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{RBRACE@{RBRACE}!toml::internal@{toml::internal}}\index{toml::internal@{toml::internal}!RBRACE@{RBRACE}}}\mbox{\Hypertarget{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa7907975edd3cb3611c6808f3ea6bd290}\label{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa7907975edd3cb3611c6808f3ea6bd290}} 
+RBRACE&\\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacetoml_1_1internal_ac8bf247366b3fbaabe2b2884e198e8db}\label{namespacetoml_1_1internal_ac8bf247366b3fbaabe2b2884e198e8db}} 
+\index{toml::internal@{toml::internal}!escapeString@{escapeString}}
+\index{escapeString@{escapeString}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{escapeString()}{escapeString()}}
+{\footnotesize\ttfamily std\+::string toml\+::internal\+::escape\+String (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_a2ff5d5d37222e56121f0d5be31c5846e}\label{namespacetoml_1_1internal_a2ff5d5d37222e56121f0d5be31c5846e}} 
+\index{toml::internal@{toml::internal}!isDouble@{isDouble}}
+\index{isDouble@{isDouble}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{isDouble()}{isDouble()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::is\+Double (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_a01c6f982376fc48c8d15259a289fec6d}\label{namespacetoml_1_1internal_a01c6f982376fc48c8d15259a289fec6d}} 
+\index{toml::internal@{toml::internal}!isInteger@{isInteger}}
+\index{isInteger@{isInteger}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{isInteger()}{isInteger()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::is\+Integer (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_a74eb33ae98e3abf00ca3eda60856bd8b}\label{namespacetoml_1_1internal_a74eb33ae98e3abf00ca3eda60856bd8b}} 
+\index{toml::internal@{toml::internal}!removeDelimiter@{removeDelimiter}}
+\index{removeDelimiter@{removeDelimiter}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{removeDelimiter()}{removeDelimiter()}}
+{\footnotesize\ttfamily std\+::string toml\+::internal\+::remove\+Delimiter (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{s }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}\label{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}} 
+\index{toml::internal@{toml::internal}!type\_name@{type\_name}}
+\index{type\_name@{type\_name}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{type\_name()}{type\_name()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const char $\ast$ toml\+::internal\+::type\+\_\+name (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_ac61f324217056b4cf3e6a245b737da36}\label{namespacetoml_1_1internal_ac61f324217056b4cf3e6a245b737da36}} 
+\index{toml::internal@{toml::internal}!type\_name$<$ bool $>$@{type\_name$<$ bool $>$}}
+\index{type\_name$<$ bool $>$@{type\_name$<$ bool $>$}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{type\_name$<$ bool $>$()}{type\_name< bool >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}{toml\+::internal\+::type\+\_\+name}}$<$ bool $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_aa48b54a469d17315b1d16f3605cdffa2}\label{namespacetoml_1_1internal_aa48b54a469d17315b1d16f3605cdffa2}} 
+\index{toml::internal@{toml::internal}!type\_name$<$ double $>$@{type\_name$<$ double $>$}}
+\index{type\_name$<$ double $>$@{type\_name$<$ double $>$}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{type\_name$<$ double $>$()}{type\_name< double >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}{toml\+::internal\+::type\+\_\+name}}$<$ double $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_ad90eb2f66cf4bf87a51538e6a37b58c7}\label{namespacetoml_1_1internal_ad90eb2f66cf4bf87a51538e6a37b58c7}} 
+\index{toml::internal@{toml::internal}!type\_name$<$ int $>$@{type\_name$<$ int $>$}}
+\index{type\_name$<$ int $>$@{type\_name$<$ int $>$}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{type\_name$<$ int $>$()}{type\_name< int >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}{toml\+::internal\+::type\+\_\+name}}$<$ int $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_a5851040cce656aed19b5220ad88c0397}\label{namespacetoml_1_1internal_a5851040cce656aed19b5220ad88c0397}} 
+\index{toml::internal@{toml::internal}!type\_name$<$ int64\_t $>$@{type\_name$<$ int64\_t $>$}}
+\index{type\_name$<$ int64\_t $>$@{type\_name$<$ int64\_t $>$}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{type\_name$<$ int64\_t $>$()}{type\_name< int64\_t >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}{toml\+::internal\+::type\+\_\+name}}$<$ int64\+\_\+t $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_ab6b22a0dae173d416cd6bde14746f0a5}\label{namespacetoml_1_1internal_ab6b22a0dae173d416cd6bde14746f0a5}} 
+\index{toml::internal@{toml::internal}!type\_name$<$ std::string $>$@{type\_name$<$ std::string $>$}}
+\index{type\_name$<$ std::string $>$@{type\_name$<$ std::string $>$}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{type\_name$<$ std::string $>$()}{type\_name< std::string >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}{toml\+::internal\+::type\+\_\+name}}$<$ std\+::string $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_ab1153102f2d9bb3c7169b5f6de1581ff}\label{namespacetoml_1_1internal_ab1153102f2d9bb3c7169b5f6de1581ff}} 
+\index{toml::internal@{toml::internal}!type\_name$<$ toml::Array $>$@{type\_name$<$ toml::Array $>$}}
+\index{type\_name$<$ toml::Array $>$@{type\_name$<$ toml::Array $>$}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{type\_name$<$ toml::Array $>$()}{type\_name< toml::Array >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}{toml\+::internal\+::type\+\_\+name}}$<$ \mbox{\hyperlink{namespacetoml_af62426e1277c863297016f43aea521c2}{toml\+::\+Array}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_ad82ecf38c58ca4b20ecb40d2df26187b}\label{namespacetoml_1_1internal_ad82ecf38c58ca4b20ecb40d2df26187b}} 
+\index{toml::internal@{toml::internal}!type\_name$<$ toml::Table $>$@{type\_name$<$ toml::Table $>$}}
+\index{type\_name$<$ toml::Table $>$@{type\_name$<$ toml::Table $>$}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{type\_name$<$ toml::Table $>$()}{type\_name< toml::Table >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}{toml\+::internal\+::type\+\_\+name}}$<$ \mbox{\hyperlink{namespacetoml_aeecd7621b81abd54fe1941255bdb1d18}{toml\+::\+Table}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_a213d942772e44d4baa7a6b0ac8b5374d}\label{namespacetoml_1_1internal_a213d942772e44d4baa7a6b0ac8b5374d}} 
+\index{toml::internal@{toml::internal}!type\_name$<$ toml::Time $>$@{type\_name$<$ toml::Time $>$}}
+\index{type\_name$<$ toml::Time $>$@{type\_name$<$ toml::Time $>$}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{type\_name$<$ toml::Time $>$()}{type\_name< toml::Time >()}}
+{\footnotesize\ttfamily template$<$$>$ \\
+const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}{toml\+::internal\+::type\+\_\+name}}$<$ \mbox{\hyperlink{namespacetoml_a7b4bca33a08201d269667d2ec0e31212}{toml\+::\+Time}} $>$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{namespacetoml_1_1internal_a6a38e599ef8d13c6643aaf3c8bd23f6a}\label{namespacetoml_1_1internal_a6a38e599ef8d13c6643aaf3c8bd23f6a}} 
+\index{toml::internal@{toml::internal}!unescape@{unescape}}
+\index{unescape@{unescape}!toml::internal@{toml::internal}}
+\doxysubsubsection{\texorpdfstring{unescape()}{unescape()}}
+{\footnotesize\ttfamily std\+::string toml\+::internal\+::unescape (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{codepoint }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+

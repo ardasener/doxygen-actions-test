@@ -1,0 +1,97 @@
+\hypertarget{main_8cpp}{}\doxysection{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.cpp@{src/main.cpp}}
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include \char`\"{}load/load.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}model/course.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}load/json.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}model/classroom.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}model/concurrent.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}model/timeslot.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}algorithm/algorithm.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/config.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}util/args.\+hxx\char`\"{}}\newline
+{\ttfamily \#include $<$omp.\+h$>$}\newline
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{main_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json}} = nlohmann\+::json
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{main_8cpp_ae0aab41eb2afd7d62e76ec583fcd1bda}{file\+\_\+exists}} (const std\+::string file\+Name)
+\item 
+std\+::string \mbox{\hyperlink{main_8cpp_ab7a45e3f77ccbf511b8676ca90315388}{get\+File\+Contents}} (std\+::ifstream \&File)
+\item 
+void \mbox{\hyperlink{main_8cpp_a41c88850fef7ad00bb6bb0fe8053c7b6}{print\+Ascii}} ()
+\item 
+int \mbox{\hyperlink{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+\doxysubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const std\+::string \mbox{\hyperlink{main_8cpp_a471c4f7714e9ed78624db5f7c327ffec}{PATH\+\_\+\+SEP}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{main_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}\label{main_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}} 
+\index{main.cpp@{main.cpp}!json@{json}}
+\index{json@{json}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{json}{json}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{load_8cpp_ab701e3ac61a85b337ec5c1abaad6742d}{json}} =  nlohmann\+::json}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{main_8cpp_ae0aab41eb2afd7d62e76ec583fcd1bda}\label{main_8cpp_ae0aab41eb2afd7d62e76ec583fcd1bda}} 
+\index{main.cpp@{main.cpp}!file\_exists@{file\_exists}}
+\index{file\_exists@{file\_exists}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{file\_exists()}{file\_exists()}}
+{\footnotesize\ttfamily bool file\+\_\+exists (\begin{DoxyParamCaption}\item[{const std\+::string}]{file\+Name }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_ab7a45e3f77ccbf511b8676ca90315388}\label{main_8cpp_ab7a45e3f77ccbf511b8676ca90315388}} 
+\index{main.cpp@{main.cpp}!getFileContents@{getFileContents}}
+\index{getFileContents@{getFileContents}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{getFileContents()}{getFileContents()}}
+{\footnotesize\ttfamily std\+::string get\+File\+Contents (\begin{DoxyParamCaption}\item[{std\+::ifstream \&}]{File }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{main_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{main_8cpp_a41c88850fef7ad00bb6bb0fe8053c7b6}\label{main_8cpp_a41c88850fef7ad00bb6bb0fe8053c7b6}} 
+\index{main.cpp@{main.cpp}!printAscii@{printAscii}}
+\index{printAscii@{printAscii}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{printAscii()}{printAscii()}}
+{\footnotesize\ttfamily void print\+Ascii (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Variable Documentation}
+\mbox{\Hypertarget{main_8cpp_a471c4f7714e9ed78624db5f7c327ffec}\label{main_8cpp_a471c4f7714e9ed78624db5f7c327ffec}} 
+\index{main.cpp@{main.cpp}!PATH\_SEP@{PATH\_SEP}}
+\index{PATH\_SEP@{PATH\_SEP}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{PATH\_SEP}{PATH\_SEP}}
+{\footnotesize\ttfamily const std\+::string PATH\+\_\+\+SEP}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{stringliteral}{"{}/"{}}}
+
+\end{DoxyCode}

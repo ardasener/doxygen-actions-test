@@ -1,0 +1,28 @@
+var classAlgorithm =
+[
+    [ "Algorithm", "classAlgorithm.html#a2f5c60a28a72260accf1b569af87fe97", null ],
+    [ "addAllToBest", "classAlgorithm.html#ab087f344be54a3dada5484307d232aab", null ],
+    [ "addToBest", "classAlgorithm.html#a5e52bb93c0429030762fdae8ff00e836", null ],
+    [ "clearBest", "classAlgorithm.html#a6a84821175232a45ca291cef06b94d19", null ],
+    [ "getBestChromosome", "classAlgorithm.html#a1ee392004dd354663fcce4f5d56e741f", null ],
+    [ "isInBest", "classAlgorithm.html#a8c45be05d3cf7c184a09385fab48cb2e", null ],
+    [ "run", "classAlgorithm.html#a0977cb6a8384659f3a734ef7a02db25c", null ],
+    [ "m_bestChromosomes", "classAlgorithm.html#a54a96463fcb3a08ce33260aa16ef23e5", null ],
+    [ "m_bestFlags", "classAlgorithm.html#a5f43d9cb6a421c441564b914cf5aa7c8", null ],
+    [ "m_bestIndices", "classAlgorithm.html#a2f1723adfe16d243ba6b686cce0a366a", null ],
+    [ "m_chromosomes", "classAlgorithm.html#a365f3a1f02137bd08c5e75133b48fb69", null ],
+    [ "m_classrooms", "classAlgorithm.html#a134169e6d7a7eb946f43376ae34846de", null ],
+    [ "m_concurrent", "classAlgorithm.html#a228f5fc0081be28ef9666ce589c04a79", null ],
+    [ "m_config", "classAlgorithm.html#addee67d73723c3c3fef23ab957f29a65", null ],
+    [ "m_courses", "classAlgorithm.html#afb78bf9481016c460dde4246e5e75b87", null ],
+    [ "m_crossoverProbability", "classAlgorithm.html#a61dd42e25e8dff9cba069657dd4395e2", null ],
+    [ "m_currentBestSize", "classAlgorithm.html#abde2043ac260b68b1f8ed3d0a3e0d382", null ],
+    [ "m_currentGeneration", "classAlgorithm.html#a9a84aec9703c92cfe0fd0f4aa7c70814", null ],
+    [ "m_mutationProbability", "classAlgorithm.html#a918d4b12ab74f3466ac200d00854bbdd", null ],
+    [ "m_mutationSize", "classAlgorithm.html#a73a57f923ce2d4725ad34c798f7521c2", null ],
+    [ "m_numberOfChromosomes", "classAlgorithm.html#af6230e0ce873979d3bc8b64f37996fbc", null ],
+    [ "m_numberOfCrossoverPoints", "classAlgorithm.html#abdd93d1eb51178782b7f0e50b6a968df", null ],
+    [ "m_replaceByGeneration", "classAlgorithm.html#a0ea58245b541db7b83adb563aa8d8a0a", null ],
+    [ "m_timeslots", "classAlgorithm.html#a68864f8ccc669e01897377d1fa4de7aa", null ],
+    [ "m_trackBest", "classAlgorithm.html#a0cbc366e5d5878fc2b9a997e8a109f4d", null ]
+];

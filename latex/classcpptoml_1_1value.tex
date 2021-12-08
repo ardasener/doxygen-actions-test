@@ -1,0 +1,165 @@
+\hypertarget{classcpptoml_1_1value}{}\doxysection{cpptoml\+::value\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{classcpptoml_1_1value}\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+
+
+{\ttfamily \#include $<$cpptoml.\+h$>$}
+
+
+
+Inheritance diagram for cpptoml\+::value\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classcpptoml_1_1value__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for cpptoml\+::value\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>}\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=181pt]{classcpptoml_1_1value__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structcpptoml_1_1value_1_1make__shared__enabler}{make\+\_\+shared\+\_\+enabler}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ \mbox{\hyperlink{classcpptoml_1_1value_a41545490bdaab88825014c3d5417fb9a}{clone}} () const override
+\item 
+\mbox{\hyperlink{classcpptoml_1_1value_aa33eca40f41a74e97e94058454127902}{value}} (const \mbox{\hyperlink{structcpptoml_1_1value_1_1make__shared__enabler}{make\+\_\+shared\+\_\+enabler}} \&, const T \&val)
+\item 
+bool \mbox{\hyperlink{classcpptoml_1_1value_a577d6daeab9e83b301b77aab838c8c73}{is\+\_\+value}} () const override
+\item 
+T \& \mbox{\hyperlink{classcpptoml_1_1value_a54bb8650ebbe58c00f028e373f3c08d0}{get}} ()
+\item 
+const T \& \mbox{\hyperlink{classcpptoml_1_1value_a5def0684ffef3d5713c374349a340a0e}{get}} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcpptoml_1_1value_a44209ff41e9083a2a7bc7ca6540a1cd9}{value}} (const T \&val)
+\item 
+\mbox{\hyperlink{classcpptoml_1_1value_aa99235a0857c2c3768eedf3d4a8d52d5}{value}} (const \mbox{\hyperlink{classcpptoml_1_1value}{value}} \&val)=delete
+\item 
+\mbox{\hyperlink{classcpptoml_1_1value}{value}} \& \mbox{\hyperlink{classcpptoml_1_1value_a26b779de57b3ccb0e9d6f824b354269d}{operator=}} (const \mbox{\hyperlink{classcpptoml_1_1value}{value}} \&val)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+T \mbox{\hyperlink{classcpptoml_1_1value_a9bec51ec1c7c3962283d0dd7aceded8b}{data\+\_\+}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class U $>$ }\\std\+::shared\+\_\+ptr$<$ typename \mbox{\hyperlink{structcpptoml_1_1value__traits}{value\+\_\+traits}}$<$ U $>$\+::type $>$ \mbox{\hyperlink{classcpptoml_1_1value_a3d48c3dba1ce9b3c783c47a1f7b67b4d}{cpptoml\+::make\+\_\+value}} (U \&\&val)
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class T$>$\newline
+class cpptoml\+::value$<$ T $>$}
+A concrete TOML value representing the \char`\"{}leaves\char`\"{} of the \char`\"{}tree\char`\"{}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1value_aa33eca40f41a74e97e94058454127902}\label{classcpptoml_1_1value_aa33eca40f41a74e97e94058454127902}} 
+\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}!value@{value}}
+\index{value@{value}!cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classcpptoml_1_1value}{cpptoml\+::value}}$<$ T $>$\+::\mbox{\hyperlink{classcpptoml_1_1value}{value}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structcpptoml_1_1value_1_1make__shared__enabler}{make\+\_\+shared\+\_\+enabler}} \&}]{,  }\item[{const T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1value_a44209ff41e9083a2a7bc7ca6540a1cd9}\label{classcpptoml_1_1value_a44209ff41e9083a2a7bc7ca6540a1cd9}} 
+\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}!value@{value}}
+\index{value@{value}!cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classcpptoml_1_1value}{cpptoml\+::value}}$<$ T $>$\+::\mbox{\hyperlink{classcpptoml_1_1value}{value}} (\begin{DoxyParamCaption}\item[{const T \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Constructs a value from the given data. \mbox{\Hypertarget{classcpptoml_1_1value_aa99235a0857c2c3768eedf3d4a8d52d5}\label{classcpptoml_1_1value_aa99235a0857c2c3768eedf3d4a8d52d5}} 
+\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}!value@{value}}
+\index{value@{value}!cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{value()}{value()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classcpptoml_1_1value}{cpptoml\+::value}}$<$ T $>$\+::\mbox{\hyperlink{classcpptoml_1_1value}{value}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcpptoml_1_1value}{value}}$<$ T $>$ \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1value_a41545490bdaab88825014c3d5417fb9a}\label{classcpptoml_1_1value_a41545490bdaab88825014c3d5417fb9a}} 
+\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}!clone@{clone}}
+\index{clone@{clone}!cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classcpptoml_1_1base}{base}} $>$ \mbox{\hyperlink{classcpptoml_1_1value}{cpptoml\+::value}}$<$ T $>$\+::clone\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classcpptoml_1_1base_a13bf42705f5a3cc6fc371fc9132f2e4a}{cpptoml\+::base}}.
+
+\mbox{\Hypertarget{classcpptoml_1_1value_a54bb8650ebbe58c00f028e373f3c08d0}\label{classcpptoml_1_1value_a54bb8650ebbe58c00f028e373f3c08d0}} 
+\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}!get@{get}}
+\index{get@{get}!cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \mbox{\hyperlink{classcpptoml_1_1value}{cpptoml\+::value}}$<$ T $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the data associated with this value. \mbox{\Hypertarget{classcpptoml_1_1value_a5def0684ffef3d5713c374349a340a0e}\label{classcpptoml_1_1value_a5def0684ffef3d5713c374349a340a0e}} 
+\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}!get@{get}}
+\index{get@{get}!cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \& \mbox{\hyperlink{classcpptoml_1_1value}{cpptoml\+::value}}$<$ T $>$\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets the data associated with this value. Const version. \mbox{\Hypertarget{classcpptoml_1_1value_a577d6daeab9e83b301b77aab838c8c73}\label{classcpptoml_1_1value_a577d6daeab9e83b301b77aab838c8c73}} 
+\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}!is\_value@{is\_value}}
+\index{is\_value@{is\_value}!cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{is\_value()}{is\_value()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool \mbox{\hyperlink{classcpptoml_1_1value}{cpptoml\+::value}}$<$ T $>$\+::is\+\_\+value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Determines if the given TOML element is a value. 
+
+Reimplemented from \mbox{\hyperlink{classcpptoml_1_1base_a0a18268ac5c68c72ce8316c995bd7f1f}{cpptoml\+::base}}.
+
+\mbox{\Hypertarget{classcpptoml_1_1value_a26b779de57b3ccb0e9d6f824b354269d}\label{classcpptoml_1_1value_a26b779de57b3ccb0e9d6f824b354269d}} 
+\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\mbox{\hyperlink{classcpptoml_1_1value}{value}} \& \mbox{\hyperlink{classcpptoml_1_1value}{cpptoml\+::value}}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classcpptoml_1_1value}{value}}$<$ T $>$ \&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}, {\ttfamily [delete]}}
+
+
+
+\doxysubsection{Friends And Related Function Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1value_a3d48c3dba1ce9b3c783c47a1f7b67b4d}\label{classcpptoml_1_1value_a3d48c3dba1ce9b3c783c47a1f7b67b4d}} 
+\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}!cpptoml::make\_value@{cpptoml::make\_value}}
+\index{cpptoml::make\_value@{cpptoml::make\_value}!cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{cpptoml::make\_value}{cpptoml::make\_value}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+template$<$class U $>$ \\
+std\+::shared\+\_\+ptr$<$ typename \mbox{\hyperlink{structcpptoml_1_1value__traits}{value\+\_\+traits}}$<$ U $>$\+::type $>$ \mbox{\hyperlink{namespacecpptoml_acaf82cf5747e83b7f43224fd68826831}{cpptoml\+::make\+\_\+value}} (\begin{DoxyParamCaption}\item[{U \&\&}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [friend]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1value_a9bec51ec1c7c3962283d0dd7aceded8b}\label{classcpptoml_1_1value_a9bec51ec1c7c3962283d0dd7aceded8b}} 
+\index{cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}!data\_@{data\_}}
+\index{data\_@{data\_}!cpptoml::value$<$ T $>$@{cpptoml::value$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{data\_}{data\_}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \mbox{\hyperlink{classcpptoml_1_1value}{cpptoml\+::value}}$<$ T $>$\+::data\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\mbox{\hyperlink{cpptoml_8h}{cpptoml.\+h}}\end{DoxyCompactItemize}

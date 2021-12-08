@@ -1,0 +1,169 @@
+\hypertarget{toml_8h}{}\doxysection{src/util/toml.h File Reference}
+\label{toml_8h}\index{src/util/toml.h@{src/util/toml.h}}
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cctype$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$cstdint$>$}\newline
+{\ttfamily \#include $<$cstdio$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$iomanip$>$}\newline
+{\ttfamily \#include $<$istream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+Include dependency graph for toml.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{toml_8h__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1internal_1_1call__traits__value}{toml\+::internal\+::call\+\_\+traits\+\_\+value$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1internal_1_1call__traits__ref}{toml\+::internal\+::call\+\_\+traits\+\_\+ref$<$ T $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1call__traits_3_01bool_01_4}{toml\+::call\+\_\+traits$<$ bool $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1call__traits_3_01int_01_4}{toml\+::call\+\_\+traits$<$ int $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1call__traits_3_01int64__t_01_4}{toml\+::call\+\_\+traits$<$ int64\+\_\+t $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1call__traits_3_01double_01_4}{toml\+::call\+\_\+traits$<$ double $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1call__traits_3_01std_1_1string_01_4}{toml\+::call\+\_\+traits$<$ std\+::string $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1call__traits_3_01Time_01_4}{toml\+::call\+\_\+traits$<$ Time $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1call__traits_3_01Array_01_4}{toml\+::call\+\_\+traits$<$ Array $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1call__traits_3_01Table_01_4}{toml\+::call\+\_\+traits$<$ Table $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1call__traits_3_01std_1_1vector_3_01T_01_4_01_4}{toml\+::call\+\_\+traits$<$ std\+::vector$<$ T $>$ $>$}}
+\item 
+class \mbox{\hyperlink{classtoml_1_1Value}{toml\+::\+Value}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1ParseResult}{toml\+::\+Parse\+Result}}
+\item 
+class \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{toml\+::internal\+::\+Token}}
+\item 
+class \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer}{toml\+::internal\+::\+Lexer}}
+\item 
+class \mbox{\hyperlink{classtoml_1_1internal_1_1Parser}{toml\+::internal\+::\+Parser}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1Value_1_1ValueConverter_3_01bool_01_4}{toml\+::\+Value\+::\+Value\+Converter$<$ bool $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1Value_1_1ValueConverter_3_01int64__t_01_4}{toml\+::\+Value\+::\+Value\+Converter$<$ int64\+\_\+t $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1Value_1_1ValueConverter_3_01int_01_4}{toml\+::\+Value\+::\+Value\+Converter$<$ int $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1Value_1_1ValueConverter_3_01double_01_4}{toml\+::\+Value\+::\+Value\+Converter$<$ double $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1Value_1_1ValueConverter_3_01std_1_1string_01_4}{toml\+::\+Value\+::\+Value\+Converter$<$ std\+::string $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1Value_1_1ValueConverter_3_01Time_01_4}{toml\+::\+Value\+::\+Value\+Converter$<$ Time $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1Value_1_1ValueConverter_3_01Array_01_4}{toml\+::\+Value\+::\+Value\+Converter$<$ Array $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1Value_1_1ValueConverter_3_01Table_01_4}{toml\+::\+Value\+::\+Value\+Converter$<$ Table $>$}}
+\item 
+struct \mbox{\hyperlink{structtoml_1_1Value_1_1ValueConverter_3_01std_1_1vector_3_01T_01_4_01_4}{toml\+::\+Value\+::\+Value\+Converter$<$ std\+::vector$<$ T $>$ $>$}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+namespace \mbox{\hyperlink{namespacetoml}{toml}}
+\item 
+namespace \mbox{\hyperlink{namespacetoml_1_1internal}{toml\+::internal}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\+::chrono\+::system\+\_\+clock\+::time\+\_\+point \mbox{\hyperlink{namespacetoml_a7b4bca33a08201d269667d2ec0e31212}{toml\+::\+Time}}
+\item 
+typedef std\+::vector$<$ Value $>$ \mbox{\hyperlink{namespacetoml_af62426e1277c863297016f43aea521c2}{toml\+::\+Array}}
+\item 
+typedef std\+::map$<$ std\+::string, Value $>$ \mbox{\hyperlink{namespacetoml_aeecd7621b81abd54fe1941255bdb1d18}{toml\+::\+Table}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{namespacetoml_a4a7f55c8e2a9a5d19c72c133d296508f}{toml\+::\+Format\+Flag}} \{ \mbox{\hyperlink{namespacetoml_a4a7f55c8e2a9a5d19c72c133d296508fa87be97bfb57c64f44cb4b6cba41d938b}{toml\+::\+FORMAT\+\_\+\+NONE}} = 0
+, \mbox{\hyperlink{namespacetoml_a4a7f55c8e2a9a5d19c72c133d296508fa017032873834043d93350e3f0ffb3eb8}{toml\+::\+FORMAT\+\_\+\+INDENT}} = 1
+ \}
+\item 
+enum class \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1a}{toml\+::internal\+::\+Token\+Type}} \{ \newline
+\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aae65cbe0cfb31a63fa33484a323ac380f}{toml\+::internal\+::\+ERROR\+\_\+\+TOKEN}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa581953f6b20ad7f993b64b1dc632032e}{toml\+::internal\+::\+END\+\_\+\+OF\+\_\+\+FILE}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaa61685a08b8ddb7936032a222b7e01a6}{toml\+::internal\+::\+END\+\_\+\+OF\+\_\+\+LINE}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaf57e263e90cbbb939b6dc6b8db7992b7}{toml\+::internal\+::\+IDENT}}
+, \newline
+\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa63b588d5559f64f89a416e656880b949}{toml\+::internal\+::\+STRING}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aae096855f3e43b9427782559ad46e1e40}{toml\+::internal\+::\+MULTILINE\+\_\+\+STRING}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aaa97b2c144243b2b9d2c593ec268b62f5}{toml\+::internal\+::\+BOOL}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa53f93baa3057821107c750323892fa92}{toml\+::internal\+::\+INT}}
+, \newline
+\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aafd3e4ece78a7d422280d5ed379482229}{toml\+::internal\+::\+DOUBLE}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa346ff32eaa3c09983fb2ec057816d352}{toml\+::internal\+::\+TIME}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa4d9b3e9fc12849d060371eb65154c751}{toml\+::internal\+::\+COMMA}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa40679521b5da0954b705341a2859f782}{toml\+::internal\+::\+DOT}}
+, \newline
+\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa969f331a87d8c958473c32b4d0e61a44}{toml\+::internal\+::\+EQUAL}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aad500138bf8f61d4b0b80413f4b76a82a}{toml\+::internal\+::\+LBRACKET}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa270adbd249f9997adc3208e92a57e066}{toml\+::internal\+::\+RBRACKET}}
+, \mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aad5e4de54911c050245979d940dc65c3a}{toml\+::internal\+::\+LBRACE}}
+, \newline
+\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1aa7907975edd3cb3611c6808f3ea6bd290}{toml\+::internal\+::\+RBRACE}}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+Parse\+Result \mbox{\hyperlink{namespacetoml_a64c9876d060c571f506c8eb61a2044d9}{toml\+::parse}} (std\+::istream \&)
+\item 
+Parse\+Result \mbox{\hyperlink{namespacetoml_adcda2222e7badf305a41b580f9fdaa87}{toml\+::parse\+File}} (const std\+::string \&filename)
+\item 
+std\+::string \mbox{\hyperlink{namespacetoml_a60fcbc01ebc0f35cc04d6d24fdc38b93}{toml\+::format}} (std\+::stringstream \&ss)
+\item 
+{\footnotesize template$<$typename T , typename... Args$>$ }\\std\+::string \mbox{\hyperlink{namespacetoml_a62009485bd6b66169523ebb9dfc83ea5}{toml\+::format}} (std\+::stringstream \&ss, T \&\&t, Args \&\&... args)
+\item 
+{\footnotesize template$<$typename... Args$>$ }\\void \mbox{\hyperlink{namespacetoml_a1953b8ca7cfdb2c967c610d945ca99df}{toml\+::failwith}} (Args \&\&... args)
+\item 
+std\+::string \mbox{\hyperlink{namespacetoml_1_1internal_a74eb33ae98e3abf00ca3eda60856bd8b}{toml\+::internal\+::remove\+Delimiter}} (const std\+::string \&s)
+\item 
+std\+::string \mbox{\hyperlink{namespacetoml_1_1internal_a6a38e599ef8d13c6643aaf3c8bd23f6a}{toml\+::internal\+::unescape}} (const std\+::string \&codepoint)
+\item 
+bool \mbox{\hyperlink{namespacetoml_1_1internal_a01c6f982376fc48c8d15259a289fec6d}{toml\+::internal\+::is\+Integer}} (const std\+::string \&s)
+\item 
+bool \mbox{\hyperlink{namespacetoml_1_1internal_a2ff5d5d37222e56121f0d5be31c5846e}{toml\+::internal\+::is\+Double}} (const std\+::string \&s)
+\item 
+std\+::string \mbox{\hyperlink{namespacetoml_1_1internal_ac8bf247366b3fbaabe2b2884e198e8db}{toml\+::internal\+::escape\+String}} (const std\+::string \&s)
+\item 
+{\footnotesize template$<$typename T $>$ }\\const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a915308b2d9404c92e8b88b3fa1d599cc}{toml\+::internal\+::type\+\_\+name}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_ac61f324217056b4cf3e6a245b737da36}{toml\+::internal\+::type\+\_\+name$<$ bool $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_ad90eb2f66cf4bf87a51538e6a37b58c7}{toml\+::internal\+::type\+\_\+name$<$ int $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a5851040cce656aed19b5220ad88c0397}{toml\+::internal\+::type\+\_\+name$<$ int64\+\_\+t $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_aa48b54a469d17315b1d16f3605cdffa2}{toml\+::internal\+::type\+\_\+name$<$ double $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_ab6b22a0dae173d416cd6bde14746f0a5}{toml\+::internal\+::type\+\_\+name$<$ std\+::string $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_a213d942772e44d4baa7a6b0ac8b5374d}{toml\+::internal\+::type\+\_\+name$<$ toml\+::\+Time $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_ab1153102f2d9bb3c7169b5f6de1581ff}{toml\+::internal\+::type\+\_\+name$<$ toml\+::\+Array $>$}} ()
+\item 
+template$<$$>$ const char $\ast$ \mbox{\hyperlink{namespacetoml_1_1internal_ad82ecf38c58ca4b20ecb40d2df26187b}{toml\+::internal\+::type\+\_\+name$<$ toml\+::\+Table $>$}} ()
+\end{DoxyCompactItemize}

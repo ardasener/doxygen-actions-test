@@ -1,0 +1,26 @@
+\hypertarget{fitness_8hpp}{}\doxysection{src/algorithm/fitness.hpp File Reference}
+\label{fitness_8hpp}\index{src/algorithm/fitness.hpp@{src/algorithm/fitness.hpp}}
+{\ttfamily \#include \char`\"{}schedule.\+cpp\char`\"{}}\newline
+Include dependency graph for fitness.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{fitness_8hpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{fitness_8hpp_ac126ade3d3083658e46ce9e6dcf9bb63}{calculate\+Fitness\+Bulk}} (std\+::vector$<$ \mbox{\hyperlink{classSchedule}{Schedule}} $\ast$ $>$ $\ast$schedules, int $\ast$concurrency\+\_\+matrix, int courses\+\_\+size, \mbox{\hyperlink{classConfig}{Config}} \&config)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{fitness_8hpp_ac126ade3d3083658e46ce9e6dcf9bb63}\label{fitness_8hpp_ac126ade3d3083658e46ce9e6dcf9bb63}} 
+\index{fitness.hpp@{fitness.hpp}!calculateFitnessBulk@{calculateFitnessBulk}}
+\index{calculateFitnessBulk@{calculateFitnessBulk}!fitness.hpp@{fitness.hpp}}
+\doxysubsubsection{\texorpdfstring{calculateFitnessBulk()}{calculateFitnessBulk()}}
+{\footnotesize\ttfamily void calculate\+Fitness\+Bulk (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classSchedule}{Schedule}} $\ast$ $>$ $\ast$}]{schedules,  }\item[{int $\ast$}]{concurrency\+\_\+matrix,  }\item[{int}]{courses\+\_\+size,  }\item[{\mbox{\hyperlink{classConfig}{Config}} \&}]{config }\end{DoxyParamCaption})}
+
+Calculates the fitness of multiple schedules given in a vector at once using CUDA GPU parallelism. 

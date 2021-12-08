@@ -1,0 +1,223 @@
+\hypertarget{classtoml_1_1internal_1_1Parser}{}\doxysection{toml\+::internal\+::Parser Class Reference}
+\label{classtoml_1_1internal_1_1Parser}\index{toml::internal::Parser@{toml::internal::Parser}}
+
+
+{\ttfamily \#include $<$toml.\+h$>$}
+
+
+
+Collaboration diagram for toml\+::internal\+::Parser\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{classtoml_1_1internal_1_1Parser__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a5c20e9369fde7827b0a28477a1f9a2e7}{Parser}} (std\+::istream \&is)
+\item 
+\mbox{\hyperlink{classtoml_1_1Value}{Value}} \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_aafcb31ff6002f3bcc5ef3b2fdad1c6b7}{parse}} ()
+\item 
+const std\+::string \& \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_aeb8e90e33bfe06cd1db7070b17b44587}{error\+Reason}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \& \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_abfdbbc78f682323263a0bd3fc8274ab5}{token}} () const
+\item 
+void \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a6d15df14b732e2ccc1c259f0983fd9de}{next\+Key}} ()
+\item 
+void \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a058eeb319f8683c6a860354c9cac4a69}{next\+Value}} ()
+\item 
+void \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a9bec3da7ef52451f26dc1b25a96c9598}{skip\+For\+Key}} ()
+\item 
+void \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a3726b16cfa36917bf1ebdf69334d72f1}{skip\+For\+Value}} ()
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_ab88aaa65a819bb8d319f5247f9473fb5}{consume\+For\+Key}} (\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1a}{Token\+Type}})
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a5a032bf20292a7d13bc7fb2af441ea3e}{consume\+For\+Value}} (\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1a}{Token\+Type}})
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_abfb7c47bdecf702063a9a27d53f1af14}{consume\+EOLor\+EOFFor\+Key}} ()
+\item 
+\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$ \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a7a67b245b69c820513f375ae9cc87343}{parse\+Group\+Key}} (\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$root)
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a157bcada39f57e7a4aed507ea215e0da}{parse\+Key\+Value}} (\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$)
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a134cdf254dfa239de521458e695392f0}{parse\+Key}} (std\+::string $\ast$)
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a7afa1d12acd723a3fc8e6a4ad7dd3f27}{parse\+Value}} (\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$)
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_aa34efa93446d886211643585a35f827e}{parse\+Bool}} (\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$)
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_af2a02fcd27ba628994a23b1c96ed0410}{parse\+Number}} (\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$)
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_acddb54bef2ddbd1eb08bca856544ba18}{parse\+Array}} (\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$)
+\item 
+bool \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_aaa0ac13d46b2abf039da5a233ba7f85e}{parse\+Inline\+Table}} (\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$)
+\item 
+void \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a1d378d101564ab2111bb2b0f7c8f5098}{add\+Error}} (const std\+::string \&reason)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Lexer}{Lexer}} \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a468745d766cd688d48bd4e03906c8658}{lexer\+\_\+}}
+\item 
+\mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a5699570056b808abc485001ce1cc5f27}{token\+\_\+}}
+\item 
+std\+::string \mbox{\hyperlink{classtoml_1_1internal_1_1Parser_a0046efc7f996e74d1b5f333ecfdae198}{error\+Reason\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a5c20e9369fde7827b0a28477a1f9a2e7}\label{classtoml_1_1internal_1_1Parser_a5c20e9369fde7827b0a28477a1f9a2e7}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!Parser@{Parser}}
+\index{Parser@{Parser}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
+{\footnotesize\ttfamily toml\+::internal\+::\+Parser\+::\+Parser (\begin{DoxyParamCaption}\item[{std\+::istream \&}]{is }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a1d378d101564ab2111bb2b0f7c8f5098}\label{classtoml_1_1internal_1_1Parser_a1d378d101564ab2111bb2b0f7c8f5098}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!addError@{addError}}
+\index{addError@{addError}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{addError()}{addError()}}
+{\footnotesize\ttfamily void toml\+::internal\+::\+Parser\+::add\+Error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{reason }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_abfb7c47bdecf702063a9a27d53f1af14}\label{classtoml_1_1internal_1_1Parser_abfb7c47bdecf702063a9a27d53f1af14}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!consumeEOLorEOFForKey@{consumeEOLorEOFForKey}}
+\index{consumeEOLorEOFForKey@{consumeEOLorEOFForKey}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{consumeEOLorEOFForKey()}{consumeEOLorEOFForKey()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Parser\+::consume\+EOLor\+EOFFor\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_ab88aaa65a819bb8d319f5247f9473fb5}\label{classtoml_1_1internal_1_1Parser_ab88aaa65a819bb8d319f5247f9473fb5}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!consumeForKey@{consumeForKey}}
+\index{consumeForKey@{consumeForKey}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{consumeForKey()}{consumeForKey()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Parser\+::consume\+For\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1a}{Token\+Type}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a5a032bf20292a7d13bc7fb2af441ea3e}\label{classtoml_1_1internal_1_1Parser_a5a032bf20292a7d13bc7fb2af441ea3e}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!consumeForValue@{consumeForValue}}
+\index{consumeForValue@{consumeForValue}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{consumeForValue()}{consumeForValue()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Parser\+::consume\+For\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{namespacetoml_1_1internal_ac92ede31bc12b5acac0139b3be532f1a}{Token\+Type}}}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_aeb8e90e33bfe06cd1db7070b17b44587}\label{classtoml_1_1internal_1_1Parser_aeb8e90e33bfe06cd1db7070b17b44587}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!errorReason@{errorReason}}
+\index{errorReason@{errorReason}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{errorReason()}{errorReason()}}
+{\footnotesize\ttfamily const std\+::string \& toml\+::internal\+::\+Parser\+::error\+Reason (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a6d15df14b732e2ccc1c259f0983fd9de}\label{classtoml_1_1internal_1_1Parser_a6d15df14b732e2ccc1c259f0983fd9de}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!nextKey@{nextKey}}
+\index{nextKey@{nextKey}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{nextKey()}{nextKey()}}
+{\footnotesize\ttfamily void toml\+::internal\+::\+Parser\+::next\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a058eeb319f8683c6a860354c9cac4a69}\label{classtoml_1_1internal_1_1Parser_a058eeb319f8683c6a860354c9cac4a69}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!nextValue@{nextValue}}
+\index{nextValue@{nextValue}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{nextValue()}{nextValue()}}
+{\footnotesize\ttfamily void toml\+::internal\+::\+Parser\+::next\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_aafcb31ff6002f3bcc5ef3b2fdad1c6b7}\label{classtoml_1_1internal_1_1Parser_aafcb31ff6002f3bcc5ef3b2fdad1c6b7}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!parse@{parse}}
+\index{parse@{parse}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{parse()}{parse()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1Value}{Value}} toml\+::internal\+::\+Parser\+::parse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_acddb54bef2ddbd1eb08bca856544ba18}\label{classtoml_1_1internal_1_1Parser_acddb54bef2ddbd1eb08bca856544ba18}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!parseArray@{parseArray}}
+\index{parseArray@{parseArray}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{parseArray()}{parseArray()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Parser\+::parse\+Array (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_aa34efa93446d886211643585a35f827e}\label{classtoml_1_1internal_1_1Parser_aa34efa93446d886211643585a35f827e}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!parseBool@{parseBool}}
+\index{parseBool@{parseBool}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{parseBool()}{parseBool()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Parser\+::parse\+Bool (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a7a67b245b69c820513f375ae9cc87343}\label{classtoml_1_1internal_1_1Parser_a7a67b245b69c820513f375ae9cc87343}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!parseGroupKey@{parseGroupKey}}
+\index{parseGroupKey@{parseGroupKey}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{parseGroupKey()}{parseGroupKey()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$ toml\+::internal\+::\+Parser\+::parse\+Group\+Key (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$}]{root }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_aaa0ac13d46b2abf039da5a233ba7f85e}\label{classtoml_1_1internal_1_1Parser_aaa0ac13d46b2abf039da5a233ba7f85e}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!parseInlineTable@{parseInlineTable}}
+\index{parseInlineTable@{parseInlineTable}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{parseInlineTable()}{parseInlineTable()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Parser\+::parse\+Inline\+Table (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a134cdf254dfa239de521458e695392f0}\label{classtoml_1_1internal_1_1Parser_a134cdf254dfa239de521458e695392f0}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!parseKey@{parseKey}}
+\index{parseKey@{parseKey}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{parseKey()}{parseKey()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Parser\+::parse\+Key (\begin{DoxyParamCaption}\item[{std\+::string $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a157bcada39f57e7a4aed507ea215e0da}\label{classtoml_1_1internal_1_1Parser_a157bcada39f57e7a4aed507ea215e0da}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!parseKeyValue@{parseKeyValue}}
+\index{parseKeyValue@{parseKeyValue}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{parseKeyValue()}{parseKeyValue()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Parser\+::parse\+Key\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_af2a02fcd27ba628994a23b1c96ed0410}\label{classtoml_1_1internal_1_1Parser_af2a02fcd27ba628994a23b1c96ed0410}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!parseNumber@{parseNumber}}
+\index{parseNumber@{parseNumber}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{parseNumber()}{parseNumber()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Parser\+::parse\+Number (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a7afa1d12acd723a3fc8e6a4ad7dd3f27}\label{classtoml_1_1internal_1_1Parser_a7afa1d12acd723a3fc8e6a4ad7dd3f27}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!parseValue@{parseValue}}
+\index{parseValue@{parseValue}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{parseValue()}{parseValue()}}
+{\footnotesize\ttfamily bool toml\+::internal\+::\+Parser\+::parse\+Value (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classtoml_1_1Value}{Value}} $\ast$}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a9bec3da7ef52451f26dc1b25a96c9598}\label{classtoml_1_1internal_1_1Parser_a9bec3da7ef52451f26dc1b25a96c9598}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!skipForKey@{skipForKey}}
+\index{skipForKey@{skipForKey}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{skipForKey()}{skipForKey()}}
+{\footnotesize\ttfamily void toml\+::internal\+::\+Parser\+::skip\+For\+Key (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a3726b16cfa36917bf1ebdf69334d72f1}\label{classtoml_1_1internal_1_1Parser_a3726b16cfa36917bf1ebdf69334d72f1}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!skipForValue@{skipForValue}}
+\index{skipForValue@{skipForValue}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{skipForValue()}{skipForValue()}}
+{\footnotesize\ttfamily void toml\+::internal\+::\+Parser\+::skip\+For\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_abfdbbc78f682323263a0bd3fc8274ab5}\label{classtoml_1_1internal_1_1Parser_abfdbbc78f682323263a0bd3fc8274ab5}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!token@{token}}
+\index{token@{token}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{token()}{token()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} \& toml\+::internal\+::\+Parser\+::token (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a0046efc7f996e74d1b5f333ecfdae198}\label{classtoml_1_1internal_1_1Parser_a0046efc7f996e74d1b5f333ecfdae198}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!errorReason\_@{errorReason\_}}
+\index{errorReason\_@{errorReason\_}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{errorReason\_}{errorReason\_}}
+{\footnotesize\ttfamily std\+::string toml\+::internal\+::\+Parser\+::error\+Reason\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a468745d766cd688d48bd4e03906c8658}\label{classtoml_1_1internal_1_1Parser_a468745d766cd688d48bd4e03906c8658}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!lexer\_@{lexer\_}}
+\index{lexer\_@{lexer\_}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{lexer\_}{lexer\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1internal_1_1Lexer}{Lexer}} toml\+::internal\+::\+Parser\+::lexer\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classtoml_1_1internal_1_1Parser_a5699570056b808abc485001ce1cc5f27}\label{classtoml_1_1internal_1_1Parser_a5699570056b808abc485001ce1cc5f27}} 
+\index{toml::internal::Parser@{toml::internal::Parser}!token\_@{token\_}}
+\index{token\_@{token\_}!toml::internal::Parser@{toml::internal::Parser}}
+\doxysubsubsection{\texorpdfstring{token\_}{token\_}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classtoml_1_1internal_1_1Token}{Token}} toml\+::internal\+::\+Parser\+::token\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\mbox{\hyperlink{toml_8h}{toml.\+h}}\end{DoxyCompactItemize}

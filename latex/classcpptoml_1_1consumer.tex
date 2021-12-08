@@ -1,0 +1,113 @@
+\hypertarget{classcpptoml_1_1consumer}{}\doxysection{cpptoml\+::consumer\texorpdfstring{$<$}{<} On\+Error \texorpdfstring{$>$}{>} Class Template Reference}
+\label{classcpptoml_1_1consumer}\index{cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}}
+
+
+{\ttfamily \#include $<$cpptoml.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcpptoml_1_1consumer_abc5bb728c95e33272fa61da1e1a6abc7}{consumer}} (std\+::string\+::iterator \&it, const std\+::string\+::iterator \&end, On\+Error \&\&on\+\_\+error)
+\item 
+void \mbox{\hyperlink{classcpptoml_1_1consumer_aab5a5278301bc40bfbf39a8a88556ceb}{operator()}} (char c)
+\item 
+{\footnotesize template$<$std\+::size\+\_\+t N$>$ }\\void \mbox{\hyperlink{classcpptoml_1_1consumer_a94bdfbc70ba9a61003f9084434156db4}{operator()}} (const char(\&str)\mbox{[}N\mbox{]})
+\item 
+void \mbox{\hyperlink{classcpptoml_1_1consumer_acc20821b98685a97e3d4a55433124a2b}{eat\+\_\+or}} (char a, char b)
+\item 
+int \mbox{\hyperlink{classcpptoml_1_1consumer_a52c521e3764bdaeda25ad08875eea8d3}{eat\+\_\+digits}} (int len)
+\item 
+void \mbox{\hyperlink{classcpptoml_1_1consumer_a2cf9e33fe9091d6ed34f9a479f709192}{error}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string\+::iterator \& \mbox{\hyperlink{classcpptoml_1_1consumer_a16bd83fb75307c1286a365ea622666c4}{it\+\_\+}}
+\item 
+const std\+::string\+::iterator \& \mbox{\hyperlink{classcpptoml_1_1consumer_ac79e143118695c752812eda64dcfeb2e}{end\+\_\+}}
+\item 
+On\+Error \mbox{\hyperlink{classcpptoml_1_1consumer_a44c71f951ac17f0d0d042e3a140274a3}{on\+\_\+error\+\_\+}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$class On\+Error$>$\newline
+class cpptoml\+::consumer$<$ On\+Error $>$}
+Helper object for consuming expected characters. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1consumer_abc5bb728c95e33272fa61da1e1a6abc7}\label{classcpptoml_1_1consumer_abc5bb728c95e33272fa61da1e1a6abc7}} 
+\index{cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}!consumer@{consumer}}
+\index{consumer@{consumer}!cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}}
+\doxysubsubsection{\texorpdfstring{consumer()}{consumer()}}
+{\footnotesize\ttfamily template$<$class On\+Error $>$ \\
+\mbox{\hyperlink{classcpptoml_1_1consumer}{cpptoml\+::consumer}}$<$ On\+Error $>$\+::\mbox{\hyperlink{classcpptoml_1_1consumer}{consumer}} (\begin{DoxyParamCaption}\item[{std\+::string\+::iterator \&}]{it,  }\item[{const std\+::string\+::iterator \&}]{end,  }\item[{On\+Error \&\&}]{on\+\_\+error }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1consumer_a52c521e3764bdaeda25ad08875eea8d3}\label{classcpptoml_1_1consumer_a52c521e3764bdaeda25ad08875eea8d3}} 
+\index{cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}!eat\_digits@{eat\_digits}}
+\index{eat\_digits@{eat\_digits}!cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}}
+\doxysubsubsection{\texorpdfstring{eat\_digits()}{eat\_digits()}}
+{\footnotesize\ttfamily template$<$class On\+Error $>$ \\
+int \mbox{\hyperlink{classcpptoml_1_1consumer}{cpptoml\+::consumer}}$<$ On\+Error $>$\+::eat\+\_\+digits (\begin{DoxyParamCaption}\item[{int}]{len }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1consumer_acc20821b98685a97e3d4a55433124a2b}\label{classcpptoml_1_1consumer_acc20821b98685a97e3d4a55433124a2b}} 
+\index{cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}!eat\_or@{eat\_or}}
+\index{eat\_or@{eat\_or}!cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}}
+\doxysubsubsection{\texorpdfstring{eat\_or()}{eat\_or()}}
+{\footnotesize\ttfamily template$<$class On\+Error $>$ \\
+void \mbox{\hyperlink{classcpptoml_1_1consumer}{cpptoml\+::consumer}}$<$ On\+Error $>$\+::eat\+\_\+or (\begin{DoxyParamCaption}\item[{char}]{a,  }\item[{char}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1consumer_a2cf9e33fe9091d6ed34f9a479f709192}\label{classcpptoml_1_1consumer_a2cf9e33fe9091d6ed34f9a479f709192}} 
+\index{cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}!error@{error}}
+\index{error@{error}!cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}}
+\doxysubsubsection{\texorpdfstring{error()}{error()}}
+{\footnotesize\ttfamily template$<$class On\+Error $>$ \\
+void \mbox{\hyperlink{classcpptoml_1_1consumer}{cpptoml\+::consumer}}$<$ On\+Error $>$\+::error (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1consumer_aab5a5278301bc40bfbf39a8a88556ceb}\label{classcpptoml_1_1consumer_aab5a5278301bc40bfbf39a8a88556ceb}} 
+\index{cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class On\+Error $>$ \\
+void \mbox{\hyperlink{classcpptoml_1_1consumer}{cpptoml\+::consumer}}$<$ On\+Error $>$\+::operator() (\begin{DoxyParamCaption}\item[{char}]{c }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1consumer_a94bdfbc70ba9a61003f9084434156db4}\label{classcpptoml_1_1consumer_a94bdfbc70ba9a61003f9084434156db4}} 
+\index{cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}!operator()@{operator()}}
+\index{operator()@{operator()}!cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}}
+\doxysubsubsection{\texorpdfstring{operator()()}{operator()()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class On\+Error $>$ \\
+template$<$std\+::size\+\_\+t N$>$ \\
+void \mbox{\hyperlink{classcpptoml_1_1consumer}{cpptoml\+::consumer}}$<$ On\+Error $>$\+::operator() (\begin{DoxyParamCaption}\item[{const char(\&)}]{str\mbox{[}\+N\mbox{]} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classcpptoml_1_1consumer_ac79e143118695c752812eda64dcfeb2e}\label{classcpptoml_1_1consumer_ac79e143118695c752812eda64dcfeb2e}} 
+\index{cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}!end\_@{end\_}}
+\index{end\_@{end\_}!cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}}
+\doxysubsubsection{\texorpdfstring{end\_}{end\_}}
+{\footnotesize\ttfamily template$<$class On\+Error $>$ \\
+const std\+::string\+::iterator\& \mbox{\hyperlink{classcpptoml_1_1consumer}{cpptoml\+::consumer}}$<$ On\+Error $>$\+::end\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1consumer_a16bd83fb75307c1286a365ea622666c4}\label{classcpptoml_1_1consumer_a16bd83fb75307c1286a365ea622666c4}} 
+\index{cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}!it\_@{it\_}}
+\index{it\_@{it\_}!cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}}
+\doxysubsubsection{\texorpdfstring{it\_}{it\_}}
+{\footnotesize\ttfamily template$<$class On\+Error $>$ \\
+std\+::string\+::iterator\& \mbox{\hyperlink{classcpptoml_1_1consumer}{cpptoml\+::consumer}}$<$ On\+Error $>$\+::it\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classcpptoml_1_1consumer_a44c71f951ac17f0d0d042e3a140274a3}\label{classcpptoml_1_1consumer_a44c71f951ac17f0d0d042e3a140274a3}} 
+\index{cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}!on\_error\_@{on\_error\_}}
+\index{on\_error\_@{on\_error\_}!cpptoml::consumer$<$ OnError $>$@{cpptoml::consumer$<$ OnError $>$}}
+\doxysubsubsection{\texorpdfstring{on\_error\_}{on\_error\_}}
+{\footnotesize\ttfamily template$<$class On\+Error $>$ \\
+On\+Error \mbox{\hyperlink{classcpptoml_1_1consumer}{cpptoml\+::consumer}}$<$ On\+Error $>$\+::on\+\_\+error\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/util/\mbox{\hyperlink{cpptoml_8h}{cpptoml.\+h}}\end{DoxyCompactItemize}

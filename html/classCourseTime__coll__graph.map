@@ -1,0 +1,6 @@
+<map id="CourseTime" name="CourseTime">
+<area shape="rect" id="node1" title=" " alt="" coords="88,95,180,121"/>
+<area shape="rect" id="node2" href="$classCourse.html" title=" " alt="" coords="5,5,68,32"/>
+<area shape="rect" id="node3" href="$classClassroom.html" title="Class representing a classroom at Sabancı University." alt="" coords="92,5,176,32"/>
+<area shape="rect" id="node4" href="$classTimeSlot.html" title="Represents a 1 hour time slot that a course can be scheduled in." alt="" coords="209,5,283,32"/>
+</map>

@@ -1,0 +1,212 @@
+\hypertarget{classCourse}{}\doxysection{Course Class Reference}
+\label{classCourse}\index{Course@{Course}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCourse_af02a963eb0d878ffb9cd5a0aa95aa6bd}{Course}} (int t\+\_\+id, std\+::string t\+\_\+code, std\+::string t\+\_\+crn, int t\+\_\+capacity, std\+::unordered\+\_\+set$<$ int $>$ $\ast$t\+\_\+block, std\+::unordered\+\_\+set$<$ std\+::string $>$ $\ast$t\+\_\+instructors, std\+::unordered\+\_\+set$<$ int $>$ $\ast$t\+\_\+instructor\+\_\+ids, int t\+\_\+duration1, int t\+\_\+duration2)
+\item 
+std\+::unordered\+\_\+set$<$ std\+::string $>$ $\ast$ \mbox{\hyperlink{classCourse_ac450746c78201eabe3e12c887cb3659b}{get\+Instructors}} ()
+\item 
+std\+::unordered\+\_\+set$<$ int $>$ $\ast$ \mbox{\hyperlink{classCourse_a62843fe50966eb8baaa49725c8b1a93f}{get\+Instructor\+Ids}} ()
+\item 
+std\+::string \mbox{\hyperlink{classCourse_a1115994e98c7f167391bc41b84d541a8}{get\+Code}} () const
+\item 
+int \mbox{\hyperlink{classCourse_afb3a46aa7d01a2a44e592b5eff95e96e}{get\+Capacity}} () const
+\item 
+int \mbox{\hyperlink{classCourse_a82c081e403a0dd4742e1fd403f94e8bd}{get\+Duration1}} () const
+\item 
+int \mbox{\hyperlink{classCourse_af35feec6c5f38419126c79c49ae1710e}{get\+Duration2}} () const
+\item 
+int \mbox{\hyperlink{classCourse_a11942b77f78c9271143d4d2c12b71bf3}{get\+Id}} () const
+\item 
+std\+::unordered\+\_\+set$<$ int $>$ $\ast$ \mbox{\hyperlink{classCourse_a9f2bc00f9d49fc7caaef11c8a1e76b11}{get\+Blocks}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classCourse_abb7eef7fb43de876d0eb01b77eca106f}{compare}} (const \mbox{\hyperlink{classCourse}{Course}} \&c1, const \mbox{\hyperlink{classCourse}{Course}} \&c2)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classCourse_a31efc958bd907ba683df6913de7ff381}{m\+\_\+id}}
+\begin{DoxyCompactList}\small\item\em An integer unique to this course (assigned automatically by load.\+cpp) \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCourse_a0d0fd8159e9f1204ebdea107e4ee79ed}{m\+\_\+duration1}}
+\begin{DoxyCompactList}\small\item\em Duration for the first class of the week. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCourse_a7a66f0c86aad99071a76f0d718b02892}{m\+\_\+duration2}}
+\begin{DoxyCompactList}\small\item\em Duration for the second class of the week. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCourse_ab0f5363167c100367d0b1772b4276103}{m\+\_\+code}}
+\item 
+std\+::string \mbox{\hyperlink{classCourse_aeed3b0b078135b8ab9dedf79513a4f4d}{m\+\_\+crn}}
+\begin{DoxyCompactList}\small\item\em Another unique string that is currently not used. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCourse_a86765a2ba10beb5c59af961ba26e3279}{m\+\_\+capacity}}
+\begin{DoxyCompactList}\small\item\em Maximum number of students that can take this code in one term. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ int $>$ $\ast$ \mbox{\hyperlink{classCourse_a6226fdf3e5b4ce5352c52666a48e134b}{m\+\_\+academic\+Blocks}}
+\begin{DoxyCompactList}\small\item\em Set of academic block ids (explained in more detail in the data section) \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ std\+::string $>$ $\ast$ \mbox{\hyperlink{classCourse_ad8d57444ff566051922d1cc280f7173e}{m\+\_\+instructors}}
+\begin{DoxyCompactList}\small\item\em Names of the instructors that are teaching this course. \end{DoxyCompactList}\item 
+std\+::unordered\+\_\+set$<$ int $>$ $\ast$ \mbox{\hyperlink{classCourse_a5a962a38d2115119a720fdae49a13793}{m\+\_\+instructor\+Ids}}
+\begin{DoxyCompactList}\small\item\em ID\textquotesingle{}s for the instructors mentioned above (assigned by load.\+cpp) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This class is a representation of a course in Sabancı University 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCourse_af02a963eb0d878ffb9cd5a0aa95aa6bd}\label{classCourse_af02a963eb0d878ffb9cd5a0aa95aa6bd}} 
+\index{Course@{Course}!Course@{Course}}
+\index{Course@{Course}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{Course()}{Course()}}
+{\footnotesize\ttfamily Course\+::\+Course (\begin{DoxyParamCaption}\item[{int}]{t\+\_\+id,  }\item[{std\+::string}]{t\+\_\+code,  }\item[{std\+::string}]{t\+\_\+crn,  }\item[{int}]{t\+\_\+capacity,  }\item[{std\+::unordered\+\_\+set$<$ int $>$ $\ast$}]{t\+\_\+block,  }\item[{std\+::unordered\+\_\+set$<$ std\+::string $>$ $\ast$}]{t\+\_\+instructors,  }\item[{std\+::unordered\+\_\+set$<$ int $>$ $\ast$}]{t\+\_\+instructor\+\_\+ids,  }\item[{int}]{t\+\_\+duration1,  }\item[{int}]{t\+\_\+duration2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCourse_abb7eef7fb43de876d0eb01b77eca106f}\label{classCourse_abb7eef7fb43de876d0eb01b77eca106f}} 
+\index{Course@{Course}!compare@{compare}}
+\index{compare@{compare}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{compare()}{compare()}}
+{\footnotesize\ttfamily static bool Course\+::compare (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classCourse}{Course}} \&}]{c1,  }\item[{const \mbox{\hyperlink{classCourse}{Course}} \&}]{c2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Compares the two given courses by their m\+\_\+id member variables. It is assumed that these ids are unique to each course. And should be assigned as such in load.\+cpp \mbox{\Hypertarget{classCourse_a9f2bc00f9d49fc7caaef11c8a1e76b11}\label{classCourse_a9f2bc00f9d49fc7caaef11c8a1e76b11}} 
+\index{Course@{Course}!getBlocks@{getBlocks}}
+\index{getBlocks@{getBlocks}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{getBlocks()}{getBlocks()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$ int $>$ $\ast$ Course\+::get\+Blocks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCourse_afb3a46aa7d01a2a44e592b5eff95e96e}\label{classCourse_afb3a46aa7d01a2a44e592b5eff95e96e}} 
+\index{Course@{Course}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Course\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCourse_a1115994e98c7f167391bc41b84d541a8}\label{classCourse_a1115994e98c7f167391bc41b84d541a8}} 
+\index{Course@{Course}!getCode@{getCode}}
+\index{getCode@{getCode}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{getCode()}{getCode()}}
+{\footnotesize\ttfamily std\+::string Course\+::get\+Code (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCourse_a82c081e403a0dd4742e1fd403f94e8bd}\label{classCourse_a82c081e403a0dd4742e1fd403f94e8bd}} 
+\index{Course@{Course}!getDuration1@{getDuration1}}
+\index{getDuration1@{getDuration1}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{getDuration1()}{getDuration1()}}
+{\footnotesize\ttfamily int Course\+::get\+Duration1 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCourse_af35feec6c5f38419126c79c49ae1710e}\label{classCourse_af35feec6c5f38419126c79c49ae1710e}} 
+\index{Course@{Course}!getDuration2@{getDuration2}}
+\index{getDuration2@{getDuration2}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{getDuration2()}{getDuration2()}}
+{\footnotesize\ttfamily int Course\+::get\+Duration2 (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCourse_a11942b77f78c9271143d4d2c12b71bf3}\label{classCourse_a11942b77f78c9271143d4d2c12b71bf3}} 
+\index{Course@{Course}!getId@{getId}}
+\index{getId@{getId}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{getId()}{getId()}}
+{\footnotesize\ttfamily int Course\+::get\+Id (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCourse_a62843fe50966eb8baaa49725c8b1a93f}\label{classCourse_a62843fe50966eb8baaa49725c8b1a93f}} 
+\index{Course@{Course}!getInstructorIds@{getInstructorIds}}
+\index{getInstructorIds@{getInstructorIds}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{getInstructorIds()}{getInstructorIds()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$ int $>$ $\ast$ Course\+::get\+Instructor\+Ids (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classCourse_ac450746c78201eabe3e12c887cb3659b}\label{classCourse_ac450746c78201eabe3e12c887cb3659b}} 
+\index{Course@{Course}!getInstructors@{getInstructors}}
+\index{getInstructors@{getInstructors}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{getInstructors()}{getInstructors()}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$ std\+::string $>$ $\ast$ Course\+::get\+Instructors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classCourse_a6226fdf3e5b4ce5352c52666a48e134b}\label{classCourse_a6226fdf3e5b4ce5352c52666a48e134b}} 
+\index{Course@{Course}!m\_academicBlocks@{m\_academicBlocks}}
+\index{m\_academicBlocks@{m\_academicBlocks}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{m\_academicBlocks}{m\_academicBlocks}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$int$>$$\ast$ Course\+::m\+\_\+academic\+Blocks\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Set of academic block ids (explained in more detail in the data section) 
+
+\mbox{\Hypertarget{classCourse_a86765a2ba10beb5c59af961ba26e3279}\label{classCourse_a86765a2ba10beb5c59af961ba26e3279}} 
+\index{Course@{Course}!m\_capacity@{m\_capacity}}
+\index{m\_capacity@{m\_capacity}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{m\_capacity}{m\_capacity}}
+{\footnotesize\ttfamily int Course\+::m\+\_\+capacity\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Maximum number of students that can take this code in one term. 
+
+\mbox{\Hypertarget{classCourse_ab0f5363167c100367d0b1772b4276103}\label{classCourse_ab0f5363167c100367d0b1772b4276103}} 
+\index{Course@{Course}!m\_code@{m\_code}}
+\index{m\_code@{m\_code}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{m\_code}{m\_code}}
+{\footnotesize\ttfamily std\+::string Course\+::m\+\_\+code\hspace{0.3cm}{\ttfamily [private]}}
+
+A unique string for the course. Obtained by concatenating course code (example\+: CS 406) and section (example\+: A) \mbox{\Hypertarget{classCourse_aeed3b0b078135b8ab9dedf79513a4f4d}\label{classCourse_aeed3b0b078135b8ab9dedf79513a4f4d}} 
+\index{Course@{Course}!m\_crn@{m\_crn}}
+\index{m\_crn@{m\_crn}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{m\_crn}{m\_crn}}
+{\footnotesize\ttfamily std\+::string Course\+::m\+\_\+crn\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Another unique string that is currently not used. 
+
+\mbox{\Hypertarget{classCourse_a0d0fd8159e9f1204ebdea107e4ee79ed}\label{classCourse_a0d0fd8159e9f1204ebdea107e4ee79ed}} 
+\index{Course@{Course}!m\_duration1@{m\_duration1}}
+\index{m\_duration1@{m\_duration1}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{m\_duration1}{m\_duration1}}
+{\footnotesize\ttfamily int Course\+::m\+\_\+duration1\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Duration for the first class of the week. 
+
+\mbox{\Hypertarget{classCourse_a7a66f0c86aad99071a76f0d718b02892}\label{classCourse_a7a66f0c86aad99071a76f0d718b02892}} 
+\index{Course@{Course}!m\_duration2@{m\_duration2}}
+\index{m\_duration2@{m\_duration2}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{m\_duration2}{m\_duration2}}
+{\footnotesize\ttfamily int Course\+::m\+\_\+duration2\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Duration for the second class of the week. 
+
+\mbox{\Hypertarget{classCourse_a31efc958bd907ba683df6913de7ff381}\label{classCourse_a31efc958bd907ba683df6913de7ff381}} 
+\index{Course@{Course}!m\_id@{m\_id}}
+\index{m\_id@{m\_id}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{m\_id}{m\_id}}
+{\footnotesize\ttfamily int Course\+::m\+\_\+id\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+An integer unique to this course (assigned automatically by load.\+cpp) 
+
+\mbox{\Hypertarget{classCourse_a5a962a38d2115119a720fdae49a13793}\label{classCourse_a5a962a38d2115119a720fdae49a13793}} 
+\index{Course@{Course}!m\_instructorIds@{m\_instructorIds}}
+\index{m\_instructorIds@{m\_instructorIds}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{m\_instructorIds}{m\_instructorIds}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$int$>$$\ast$ Course\+::m\+\_\+instructor\+Ids\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+ID\textquotesingle{}s for the instructors mentioned above (assigned by load.\+cpp) 
+
+\mbox{\Hypertarget{classCourse_ad8d57444ff566051922d1cc280f7173e}\label{classCourse_ad8d57444ff566051922d1cc280f7173e}} 
+\index{Course@{Course}!m\_instructors@{m\_instructors}}
+\index{m\_instructors@{m\_instructors}!Course@{Course}}
+\doxysubsubsection{\texorpdfstring{m\_instructors}{m\_instructors}}
+{\footnotesize\ttfamily std\+::unordered\+\_\+set$<$std\+::string$>$$\ast$ Course\+::m\+\_\+instructors\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Names of the instructors that are teaching this course. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/model/\mbox{\hyperlink{course_8cpp}{course.\+cpp}}\end{DoxyCompactItemize}

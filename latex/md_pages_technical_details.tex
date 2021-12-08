@@ -1,0 +1,102 @@
+\doxysection*{General Structure of The Algorithm}
+
+
+\begin{DoxyInlineImage}
+\includegraphics[height=\baselineskip,keepaspectratio=true]{overall-alg-50.png}%A Simplified Diagram of the Algorithm
+\end{DoxyInlineImage}
+
+
+The algorithm works by simulating generations of chromosomes. Each chromosome is a schedule. At the end of each generation the fitness of all the chromosomes are calculated. The chromosomes with the best scores are then seperated. Crossovers and mutations are applied on these good chromosomes to create the next generation.
+
+\doxysection*{Crossovers}
+
+A child schedule is created by merging different points (course time slots) of 2 parent schedules. There is a dominant and a recessive parent. The algorithm first copies both parents and sorts both copied parents according to multiple metrics to get them in sync with each other. Then a number of random points are copied from the recessive parent to the copy of the dominant parent. This copy is then used as the child chromosome.
+
+Below is a C-\/style pseudocode for the algorithm. The actual algorithm is more complicated since it has to account for consecutive class times.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classSchedule}{Schedule}} crossover(parent1, parent2)\{}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    parent1\_copy = parent1.copy()}
+\DoxyCodeLine{    parent2\_copy = parent2.copy()}
+\DoxyCodeLine{}
+\DoxyCodeLine{    sort(parent1\_copy)}
+\DoxyCodeLine{    sort(parent2\_copy)}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{for}(i=0; i<num\_points; i++)\{}
+\DoxyCodeLine{        rand\_num = random number between 0, parent1.size}
+\DoxyCodeLine{        parent1\_copy[rand\_num] = parent2\_copy[rand\_num]}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{}
+\DoxyCodeLine{    \textcolor{keywordflow}{return} parent1\_copy}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\doxysection*{Mutations}
+
+After each crossover there is a chance that a mutation can occur. During a mutation, a set number of points are changed randomly. This serves introduce to new qualities to the gene pool. This part also requires sorting since we want to keep the consecutive class times together.
+
+Below is a C-\/style pseudocode for the algorithm. The actual algorithm is more complicated since it has to account for consecutive class times.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordtype}{void} mutation(chromosome)\{}
+\DoxyCodeLine{}
+\DoxyCodeLine{    sort(chromosome)}
+\DoxyCodeLine{    }
+\DoxyCodeLine{    \textcolor{keywordflow}{for}(i=0; i<num\_points; i++)\{    }
+\DoxyCodeLine{        rand\_num = random number between 0, chromosome.size}
+\DoxyCodeLine{        rand\_classroom = randomly choosen classroom}
+\DoxyCodeLine{        rand\_time\_slot = randomly choosen timeslot}
+\DoxyCodeLine{        }
+\DoxyCodeLine{        chromosome[rand\_num].classroom = rand\_classroom}
+\DoxyCodeLine{        chromosome[rand\_num].timeslot = rand\_time\_slot}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\doxysection*{Handling Consecutive Classes}
+
+Most of the courses have last for more than one hour as such they have to be scheduled into multiple consecutive time slots in the same classroom. As a result the algorithm should account for this during crossovers and mutations as well as generating the initial chromosomes.
+
+To handle this, a root flag was implemented which indicates whether or not that particular course time is the first hour for that course in that day. Then during any operation that involves moving these course times, first an appropriate time slot is selected and the whole class is moved from the root.
+
+\doxysection*{Calculating Fitness Scores}
+
+Fitness score for each chromosome is calculated by comparing each course time in the schedule with all the other course times. To make this process more efficient the schedule is sorted according to time and each course is compared to the ones ahead of it. Also any collision related checks are stopped after the time slot changes.
+
+A penalty is applied to the fitness score for each error, ranging depending on severity.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{for each} coursetime\{}
+\DoxyCodeLine{    \textcolor{keywordflow}{for each} other coursetime\{}
+\DoxyCodeLine{        \textcolor{keywordflow}{if} error condition \{}
+\DoxyCodeLine{            fitness += penalty}
+\DoxyCodeLine{        \}}
+\DoxyCodeLine{    \}}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+\doxysection*{Open\+MP}
+
+Open\+MP is used to parallelize the initialization of the gene pool and the creation of new chromosomes via crossovers and mutations in each generation. During these operations each thread handles a single chromosome at any given time.
+
+If CUDA isn\textquotesingle{}t used Open\+MP will also handle fitness calculations. As with mutations and crossovers, each thread will handle a single chromosome at any given time.
+
+\doxysection*{CUDA}
+
+CUDA is used to parallelize the fitness calculations. After the chromosomes for a generation is created using Open\+MP parallelism, they are given to the CUDA kernel in bulk and their fitnesses are calculated all together. In CUDA, each thread will handle a different point (course time) of a chromosome at any given time.
+
+\doxysection*{Experimental Features}
+
+A feature called \char`\"{}variable mutations\char`\"{} can be activated from the config file. This will allow the mutation sizes to vary. This was implemented because a schedule may require small or big changes that can not be provided by static sized crossovers or mutations. No formal tests were performed on this option so its effectiveness is not completely clear.
+
+An option to enable hybrid parallelism between CUDA and Open\+MP for fitness calculations was implemented as well and can be activated from the config file. 

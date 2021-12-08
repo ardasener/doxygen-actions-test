@@ -1,0 +1,5 @@
+var structcpptoml_1_1value__traits_3_01T_00_01typename_01std_1_1enable__if_3_01_9valid__value__or__s9b2e18cd3ba579a2d4644de45287dd7a =
+[
+    [ "type", "structcpptoml_1_1value__traits_3_01T_00_01typename_01std_1_1enable__if_3_01_9valid__value__or__s9b2e18cd3ba579a2d4644de45287dd7a.html#a42a9e7573788511f4d3acb91d7e1c1e3", null ],
+    [ "value_type", "structcpptoml_1_1value__traits_3_01T_00_01typename_01std_1_1enable__if_3_01_9valid__value__or__s9b2e18cd3ba579a2d4644de45287dd7a.html#afe467fae899437c96ab2124389301cbe", null ]
+];
